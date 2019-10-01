@@ -1,0 +1,155 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1080px;
+}
+
+.UpperBackground {
+    background-color: #000;
+    width: 100%;
+    height: 120px;
+}
+
+.header {
+    display: table;
+    width: 1080px;
+    height: 100%;
+    background: pink;
+    margin: 0 auto;
+}
+
+.header span {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.MiddleBackground {
+    background-color: #fffacd;
+    width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.menu {
+    width: 1000px;
+    height: 33px;
+    margin: 0 auto;
+}
+
+.menu div {
+    float: left;
+}
+
+.menu>.table {
+    background: white;
+    width: 322px;
+    height: 100%;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+}
+
+.menu>.table:hover {
+    border: 1px solid #454545;
+    font-weight: bold;
+}
+
+.menu>.table span {
+    font-size: 16px;
+    color: #000;
+    vertical-align: middle;
+}
+
+.menu>.form {
+    background: white;
+    width: 322px;
+    height: 100%;
+    border: 1px solid #d1d1d1;
+    margin-left: 14px;
+    text-align: center;
+}
+
+.menu>.form:hover {
+    border: 1px solid #454545;
+    font-weight: bold;
+}
+
+.menu>.form span {
+    font-size: 16px;
+    color: #000;
+    vertical-align: middle;
+}
+
+.menu>.list {
+    background: white;
+    width: 322px;
+    height: 100%;
+    border: 1px solid #d1d1d1;
+    margin-left: 14px;
+    text-align: center;
+}
+
+.menu>.list:hover {
+    border: 1px solid #454545;
+    font-weight: bold;
+}
+
+.menu>.list span {
+    font-size: 16px;
+    color: #000;
+    vertical-align: middle;
+}
+
+.main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.phrase span {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.phrase hr {
+    margin-top: 20px;
+    size: 1px;
+    color: #454545;
+}
+
+.footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+}
+
+.footer>.info {
+    margin-top: 20px;
+}
+
+.footer>.copyright {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.footer>.info span{
+    font-size: 12px;
+    color: #999;
+}
+
+.footer>.copyright span{
+    font-size: 12px;
+    color: #000;
+}
