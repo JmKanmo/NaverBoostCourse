@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     min-width: 1080px;
+    min-height: 100%;
 }
 
 .UpperBackground {
@@ -12,7 +13,8 @@ body {
 }
 
 .header {
-    display: table;
+    display: flex;
+    align-items: center;
     width: 1080px;
     height: 100%;
     background: pink;
@@ -20,8 +22,6 @@ body {
 }
 
 .header span {
-    display: table-cell;
-    vertical-align: middle;
     padding-left: 40px;
     color: #fff;
     font-size: 40px;
@@ -34,6 +34,7 @@ body {
     height: auto;
     margin: 0 auto;
     padding-top: 40px;
+    padding-bottom: 120px;
 }
 
 .menu {
@@ -46,63 +47,66 @@ body {
     float: left;
 }
 
-.menu>.table {
+.menu>.table_btn {
     background: white;
     width: 322px;
     height: 100%;
     border: 1px solid #d1d1d1;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.menu>.table:hover {
+.menu>.table_btn:hover {
     border: 1px solid #454545;
     font-weight: bold;
 }
 
-.menu>.table span {
+.menu>.table_btn span {
     font-size: 16px;
     color: #000;
-    vertical-align: middle;
 }
 
-.menu>.form {
-    background: white;
-    width: 322px;
-    height: 100%;
-    border: 1px solid #d1d1d1;
-    margin-left: 14px;
-    text-align: center;
-}
-
-.menu>.form:hover {
-    border: 1px solid #454545;
-    font-weight: bold;
-}
-
-.menu>.form span {
-    font-size: 16px;
-    color: #000;
-    vertical-align: middle;
-}
-
-.menu>.list {
+.menu>.form_btn {
     background: white;
     width: 322px;
     height: 100%;
     border: 1px solid #d1d1d1;
     margin-left: 14px;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.menu>.list:hover {
+.menu>.form_btn:hover {
     border: 1px solid #454545;
     font-weight: bold;
 }
 
-.menu>.list span {
+.menu>.form_btn span {
     font-size: 16px;
     color: #000;
-    vertical-align: middle;
+}
+
+.menu>.list_btn {
+    background: white;
+    width: 322px;
+    height: 100%;
+    border: 1px solid #d1d1d1;
+    margin-left: 14px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu>.list_btn:hover {
+    border: 1px solid #454545;
+    font-weight: bold;
+}
+
+.menu>.list_btn span {
+    font-size: 16px;
+    color: #000;
 }
 
 .main {
@@ -120,8 +124,84 @@ body {
 
 .phrase hr {
     margin-top: 20px;
-    size: 1px;
-    color: #454545;
+    border: 1px solid #454545;
+}
+
+.div_table {
+    margin-top: 30px;
+    height: auto;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+}
+
+.table_contents {
+    width: 940px;
+    height: 12px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.table_contents span {
+    font-size: 12px;
+    color: #000;
+}
+
+.form_table {
+    margin-top: 30px;
+    height: auto;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+}
+
+.form_contents {
+    width: 940px;
+    height: 12px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.form_contents span {
+    font-size: 12px;
+    color: #000;
+}
+
+.list_table {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    height: auto;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+}
+
+.list_contents {
+    width: 940px;
+    height: 12px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.list_contents span {
+    font-size: 12px;
+    color: #000;
+}
+
+.upper {
+    width: 100%;
+    height: 46px;
+    background-color: #f7f7f7;
+    border: 1px solid #d1d1d1;
+    display: flex;
+    align-items: center;
+}
+
+.upper span {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-left: 15px;
 }
 
 .footer {
@@ -144,12 +224,12 @@ body {
     margin-left: 30px;
 }
 
-.footer>.info span{
+.footer>.info span {
     font-size: 12px;
     color: #999;
 }
 
-.footer>.copyright span{
+.footer>.copyright span {
     font-size: 12px;
     color: #000;
 }
