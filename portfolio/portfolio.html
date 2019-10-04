@@ -1,78 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <script>
-        function move(name) {
-            var offset = $(name).offset();
-            $('html,body').animate({
-                scrollTop: offset.top
-            }, 400);
-        }
-    </script>
     <title>포르폴리오</title>
 </head>
 
 <body>
-    <div class="UpperBackground">
+    <div class="header_container">
         <header class="header">
-            <a href="">포트폴리오</a>
+            <h1 class="logo"><a href="">포트폴리오</a></h1>
         </header>
     </div>
 
     <div class="MiddleBackground">
-        <div class="menu">
-            <div class="table_btn" onclick="move('.table_btn')">
-                <span href="">테이블 요소</span>
-            </div>
+        <nav class="menu">
+            <a href="#table_range" class="btn_group">
+                <span>테이블 요소</span>
+            </a>
 
-            <div class="form_btn" onclick="move('.form_btn')">
-                <span href="">폼 요소</span>
-            </div>
+            <a href="#form_range" class="btn_group">
+                <span>폼 요소</span>
+            </a>
 
-            <div class="list_btn" onclick="move('.list_btn')">
-                <span href="">리스트 요소</span>
-            </div>
-        </div>
+            <a href="#list_range" class="btn_group">
+                <span>리스트 요소</span>
+            </a>
+        </nav>
 
         <div class="main">
             <div class="phrase">
-                <span>구성 요소</span>
-                <hr>
+                <h2>구성 요소</h2>
             </div>
 
-            <div class="div_table">
+            <div class="content_container">
                 <div class="upper">
-                    <span>테이블 요소</span>
+                    <h3>테이블 요소</h3>
                 </div>
 
-                <div class="table_contents">
-                    <span>콘텐츠 영역</span>
-                </div>
-            </div>
-
-            <div class="form_table">
-                <div class="upper">
-                    <span>폼 요소</span>
-                </div>
-
-                <div class="form_contents">
-                    <span>콘텐츠 영역</span>
+                <div class="div_contents" id="table_range">
+                    <span class="table_main">콘텐츠 영역</span>
                 </div>
             </div>
 
-            <div class="list_table">
+            <div class="content_container">
                 <div class="upper">
-                    <span>리스트 요소</span>
+                    <h3>폼 요소</h3>
                 </div>
 
-                <div class="list_contents">
-                    <span>콘텐츠 영역</span>
+                <div class="div_contents" id="form_range">
+                    <span class="form_main">콘텐츠 영역</span>
+                </div>
+            </div>
+
+            <div class="content_container">
+                <div class="upper">
+                    <h3>리스트 요소</h3>
+                </div>
+
+                <div class="div_contents" id="list_range">
+                    <span class="list_main">콘텐츠 영역</span>
                 </div>
             </div>
         </div>
