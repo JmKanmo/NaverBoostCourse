@@ -6,7 +6,6 @@ body {
     padding: 0;
     min-width: 1080px;
     min-height: 100%;
-    position: relative;
     font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
 }
 
@@ -19,20 +18,19 @@ body {
     background-color: #000;
 }
 
-.header_container>.header {
+.header_container .header {
     width: 1080px;
     height: 100%;
     margin: 0 auto;
 }
 
-.header_container>.header>.logo {
+.header_container .header .logo {
     display: inline;
     line-height: 120px;
-    vertical-align: middle;
     margin-left: 40px;
 }
 
-.header_container>.header>.logo a {
+.header_container .header .logo a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -46,8 +44,7 @@ body {
 .MiddleBackground {
     width: 1080px;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0 40px;
 }
 
 .menu {
@@ -56,46 +53,42 @@ body {
     margin: 0 auto;
 }
 
-.menu>.btn_group {
+.menu .btn_group {
     float: left;
     border: 1px solid #d1d1d1;
     width: 322px;
     height: 31px;
     text-align: center;
     text-decoration: none;
-}
-
-.menu>.btn_group+a {
-    margin-left: 14px;
-}
-
-.menu>.btn_group span {
     color: #000;
     font-size: 16px;
     line-height: 33px;
-    vertical-align: middle;
 }
 
-.menu>.btn_group:hover {
+.menu .btn_group+a {
+    margin-left: 14px;
+}
+
+.menu .btn_group:hover {
     border-color: #454545;
     font-weight: bold;
 }
 
 .main {
     width: 1000px;
-    margin: 50px auto 0px;
+    margin: 50px auto 0;
 }
 
-.main>.phrase {
+.main .phrase {
     font-size: 20px;
     color: #000;
     font-weight: bold;
     border-bottom: 1px solid #454545;
 }
 
-.content_container{
+.content_container {
     margin-top: 30px;
-    border: 1px solid #d1d1d1; 
+    border: 1px solid #d1d1d1;
 }
 
 .upper {
@@ -108,8 +101,6 @@ body {
     display: inline;
     margin-left: 15px;
     line-height: 45px;
-    vertical-align: middle;
-    font-weight: bold;
     font-size: 16px;
     color: #333;
 }
@@ -118,19 +109,19 @@ body {
     margin: 30px;
 }
 
-.div_contents>.table_main {
+.div_contents .table_main {
     /*추후 콘텐츠코드추가*/
     font-size: 12px;
     color: #000;
 }
 
-.div_contents>.form_main {
+.div_contents .form_main {
     /*추후 콘텐츠코드추가*/
     font-size: 12px;
     color: #000;
 }
 
-.div_contents>.list_main {
+.div_contents .list_main {
     /*추후 콘텐츠코드추가*/
     font-size: 12px;
     color: #000;
@@ -141,28 +132,21 @@ body {
 */
 
 .footer {
-    position: absolute;
     width: 100%;
     height: 120px;
     border: 1px solid #d1d1d1;
     text-align: center;
 }
 
-.footer>.info {
+.footer .info {
     margin-top: 20px;
-}
-
-.footer>.copyright {
-    margin-top: 5px;
-    margin-left: 30px;
-}
-
-.footer>.info span {
     font-size: 12px;
     color: #999;
 }
 
-.footer>.copyright span {
+.footer .copyright {
+    margin-top: 7px;
+    margin-left: 30px;
     font-size: 12px;
     color: #000;
 }
