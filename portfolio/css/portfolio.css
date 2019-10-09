@@ -91,13 +91,13 @@ body {
     border: 1px solid #d1d1d1;
 }
 
-.upper {
+.content_title {
     height: 45px;
     background-color: #f7f7f7;
     border-bottom: 1px solid #d1d1d1;
 }
 
-.upper h3 {
+.content_title h3 {
     display: inline;
     margin-left: 15px;
     line-height: 45px;
@@ -109,10 +109,74 @@ body {
     margin: 30px;
 }
 
-.div_contents .table_main {
-    /*추후 콘텐츠코드추가*/
+/*아동테이블 스타일 정의*/
+.child_table {
+    margin-bottom: 40px;
+    border-collapse: collapse;
     font-size: 12px;
+    color: #555;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
     color: #000;
+}
+
+thead {
+    background-color: #fbfbfb;
+}
+
+.child_table th {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    text-align: center;
+}
+
+.child_table td {
+    border: 1px solid #e4e4e4;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.child_table .highlight {
+    font-weight: bold;
+}
+
+/*금액조회테이블 스타일 정의*/
+.money_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #a5a5a5;
+    border-bottom: 1px solid #e4e4e4;
+    font-size: 12px;
+    color: #555;
+}
+
+.money_table thead {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.money_table tbody {
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.money_table tfoot {
+    font-weight: bold;
+}
+
+.money_table th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.money_table .Money {
+    text-align: right;
+    padding-right: 70px;
 }
 
 .div_contents .form_main {
@@ -145,8 +209,7 @@ body {
 }
 
 .footer .copyright {
-    margin-top: 7px;
-    margin-left: 30px;
+    margin: 7px 0 0 30px;
     font-size: 12px;
     color: #000;
 }
