@@ -179,10 +179,114 @@ td {
     padding-right: 70px;
 }
 
-.div_contents .form_main {
-    /*추후 콘텐츠코드추가*/
+/*폼요소 스타일정의*/
+
+.form_title {
+    font-size: 14px;
+}
+
+.signup_form {
+    border: 1px solid #e4e4e4;
+    background-color: #fbfbfb;
+    padding: 15px;
+}
+
+.signup_form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup_form .input_form {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 15px;
     font-size: 12px;
-    color: #000;
+}
+
+.signup_form .select_form {
+    width: 298px;
+    height: 30px;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.signup_form .sex_form {
+    width: 130px;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.signup_form .check_form {
+    margin: 0;
+    top: 2.5px;
+    position: relative;
+}
+
+.signup_form .sex_form div {
+    float: left;
+}
+
+.signup_form .sex_form div+div {
+    float: right;
+}
+
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.signup_form .phoneNumber_input {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.signup_form .phoneNumber_btn {
+    width: 19%;
+    height: 35px;
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signup_form .hobby_form {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+
+.signup_form .hobby_form div {
+    float: left;
+}
+
+.signup_form .hobby_form div+div {
+    margin-left: 70px;
+}
+
+.signup_form .greeting_form {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e4e4e4;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.signup_form .signup_btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #08a600;
+    background-color: #4ec53d;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .div_contents .list_main {

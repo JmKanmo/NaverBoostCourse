@@ -196,7 +196,57 @@
                 </div>
 
                 <div class="div_contents" id="form_range">
-                    <span class="form_main">콘텐츠 영역</span>
+                    <h4 class="form_title">회원가입</h4>
+                    <form action="/portfolio.html" class="signup_form">
+                        <label for="userid">아이디</label>
+                        <input type="text" id="userid" class="input_form">
+                        <label for="userpw">비밀번호</label>
+                        <input type="password" id="userpw" class="input_form">
+                        <label for="username">이름</label>
+                        <input type="text" id="username" class="input_form">
+
+                        <label for="birthdate">생년월일</label>
+                        <select class="select_form" id="birthdate">
+                            <option>년도</option>
+                        </select>
+                        <select class="select_form">
+                            <option>월</option>
+                        </select>
+                        <select class="select_form">
+                            <option>일</option>
+                        </select>
+
+                        <label for="sex">성별</label>
+                        <div class="sex_form clear_fix">
+                            <div><input type="radio" id="sex" name="radio_btn" class="check_form"> 남자</div>
+                            <div><input type="radio" name="radio_btn" class="check_form"> 여자</div>
+                        </div>
+
+                        <label for="user_email">이메일</label>
+                        <input type="email" id="user_email" class="input_form" placeholder="   이메일 주소에 '@'를 포함해주세요.">
+
+                        <label for="phoneNumber">휴대전화</label>
+                        <input type="tel" id="phoneNumber" class="phoneNumber_input" placeholder=" 숫자만 입력해주세요.">
+                        <button class="phoneNumber_btn">인증번호 받기</button>
+                        <input type="tel" class="input_form" placeholder=" 인증번호를 입력해주세요.">
+
+
+                        <label for="hobby">취미</label>
+                        <div class="hobby_form clear_fix">
+                            <div><input type="checkbox" id="hobby" class="check_form"> 운동</div>
+                            <div> <input type="checkbox" class="check_form"> 요리</div>
+                            <div><input type="checkbox" class="check_form"> 여행</div>
+                            <div><input type="checkbox" class="check_form"> 게임</div>
+                            <div><input type="checkbox" class="check_form"> 컴퓨터</div>
+                            <div><input type="checkbox" class="check_form"> 음악</div>
+                            <div><input type="checkbox" class="check_form"> 영화</div>
+                            <div><input type="checkbox" class="check_form"> 독서</div>
+                        </div>
+
+                        <label for="greetings">가입인사</label>
+                        <textarea id="greetings" class="greeting_form"></textarea>
+                        <button class="signup_btn">가입하기</button>
+                    </form>
                 </div>
             </div>
 
