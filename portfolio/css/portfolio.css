@@ -109,6 +109,10 @@ body {
     margin: 30px;
 }
 
+.div_contents h4 {
+    font-size: 14px;
+}
+
 /*아동테이블 스타일 정의*/
 .child_table {
     margin-bottom: 40px;
@@ -180,11 +184,6 @@ td {
 }
 
 /*폼요소 스타일정의*/
-
-.form_title {
-    font-size: 14px;
-}
-
 .signup_form {
     border: 1px solid #e4e4e4;
     background-color: #fbfbfb;
@@ -289,10 +288,75 @@ td {
     cursor: pointer;
 }
 
-.div_contents .list_main {
-    /*추후 콘텐츠코드추가*/
+/*리스트요소 스타일정의*/
+.div_contents .project_div {
+    border: 1px solid #e4e4e4;
+    padding: 20px 10px 20px 10px;
+    margin-bottom: 40px;
+}
+
+.project_div h5 {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0 30px 0;
+}
+
+.project_div dt {
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project_div dt+dt {
+    margin: 2.5px 0 0 5px;
     font-size: 12px;
+    color: #559bfa;
+}
+
+.project_div dd {
+    margin: 10px 0 20px 0;
+    font-size: 12px;
+}
+
+/*실시간검색어 스타일정의*/
+.realtime_topic {
+    width: 250px;
+    border: 1px solid #e4e4e4;
+    padding: 20px 0 5px 15px;
+}
+
+.topic {
+    margin-bottom: 15px;
+    font-size: 12px;
+    list-style: none;
+}
+
+.topic .rank {
+    float: left;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    line-height: 17px;
+    position: relative;
+    top: -3px;
+    font-size: 10px;
+    color: #666;
+}
+
+.topic a {
+    text-decoration: none;
     color: #000;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 220px;
+    display: inline-block;
+}
+
+.topic a:hover {
+    text-decoration: underline;
 }
 
 /*
