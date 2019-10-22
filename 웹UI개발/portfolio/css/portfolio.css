@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+/*기본스타일 정의*/
+
 html,
 body {
     margin: 0;
@@ -7,6 +9,25 @@ body {
     min-width: 1080px;
     min-height: 100%;
     font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /*
@@ -30,9 +51,7 @@ body {
 }
 
 .header_container .header .logo a {
-    text-decoration: none;
     color: #fff;
-    font-weight: bold;
     font-size: 40px;
 }
 
@@ -40,7 +59,7 @@ body {
 중간영역(Menu,Contents..)  
 */
 
-.MiddleBackground {
+.middle_background {
     width: 1080px;
     margin: 0 auto;
     padding: 40px 0 40px;
@@ -58,13 +77,11 @@ body {
     width: 322px;
     height: 31px;
     text-align: center;
-    text-decoration: none;
-    color: #000;
     font-size: 16px;
     line-height: 33px;
 }
 
-.menu .btn_group+a {
+.menu .btn_group+.btn_group {
     margin-left: 14px;
 }
 
@@ -80,8 +97,6 @@ body {
 
 .main .phrase {
     font-size: 20px;
-    color: #000;
-    font-weight: bold;
     border-bottom: 1px solid #454545;
 }
 
@@ -212,29 +227,31 @@ td {
 }
 
 .signup_form .sex_form {
-    width: 130px;
+    width: 150px;
     margin-bottom: 15px;
-    font-size: 12px;
 }
 
-.signup_form .check_form {
-    margin: 0;
-    top: 2.5px;
-    position: relative;
-}
-
-.signup_form .sex_form div {
+.sex_form .radio,
+.hobby_form .radio {
     float: left;
 }
 
-.signup_form .sex_form div+div {
+.sex_form .radio+.radio {
     float: right;
 }
 
-.clear_fix::after {
-    content: "";
-    display: block;
-    clear: both;
+.sex_form .sex_btn,
+.hobby_form .hobby_btn {
+    margin: 0 5px 0 0;
+    position: relative;
+    top: -1px;
+}
+
+.sex_form .sex_label,
+.hobby_form .hobby_label {
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
 }
 
 .signup_form .phoneNumber_input {
@@ -257,14 +274,9 @@ td {
 
 .signup_form .hobby_form {
     margin-bottom: 15px;
-    font-size: 12px;
 }
 
-.signup_form .hobby_form div {
-    float: left;
-}
-
-.signup_form .hobby_form div+div {
+.hobby_form .radio+.radio {
     margin-left: 70px;
 }
 
@@ -329,7 +341,6 @@ td {
 .realtime_topic .topic {
     margin-bottom: 15px;
     font-size: 12px;
-    list-style: none;
 }
 
 .realtime_topic .topic .rank {
@@ -346,8 +357,6 @@ td {
 }
 
 .realtime_topic .topic a {
-    text-decoration: none;
-    color: #000;
     margin-left: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -365,11 +374,6 @@ td {
     padding: 20px 0px 0px 30px;
     margin-bottom: 40px;
     border: 1px solid #e4e4e4;
-}
-
-.cookieGuide ul {
-    margin: 0;
-    padding: 0;
 }
 
 .cookieGuide ul li {
@@ -408,12 +412,6 @@ td {
     border: 1px solid #e4e4e4;
 }
 
-.News ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .News .article_1 {
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 20px;
@@ -450,20 +448,13 @@ td {
 
 /*웹툰영역 스타일정의*/
 .webtoon_box {
-    list-style: none;
     border: 1px solid #e4e4e4;
-    margin: 0;
     padding: 0 21px 30px 0;
 }
 
 .webtoon_box .webtoon_list {
     float: left;
     margin: 20px 0 0 20px;
-}
-
-.webtoon_box .webtoon_list .webtoon {
-    text-decoration: none;
-    color: #000;
 }
 
 .webtoon img {

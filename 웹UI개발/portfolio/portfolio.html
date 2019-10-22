@@ -16,8 +16,8 @@
         </header>
     </div>
 
-    <div class="MiddleBackground">
-        <nav class="menu">
+    <div class="middle_background">
+        <nav class="menu clear_fix">
             <a href="#table_range" class="btn_group">
                 테이블 요소
             </a>
@@ -66,8 +66,8 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td rowspan="3" class="highlight">미국 남아<br>[Boys 2-7]</td>
-                                <td class="highlight">사이즈</td>
+                                <th rowspan="3" class="highlight">미국 남아<br>[Boys 2-7]</td>
+                                <th class="highlight">사이즈</td>
                                 <td>2T</td>
                                 <td>3T</td>
                                 <td>4T</td>
@@ -78,7 +78,7 @@
                             </tr>
 
                             <tr>
-                                <td class="highlight">키</td>
+                                <th class="highlight">키</td>
                                 <td>84-91</td>
                                 <td>91-99</td>
                                 <td>91-99</td>
@@ -89,7 +89,7 @@
                             </tr>
 
                             <tr>
-                                <td class="highlight">몸무게</td>
+                                <th class="highlight">몸무게</td>
                                 <td>13-15</td>
                                 <td>14-15</td>
                                 <td>13-15</td>
@@ -102,8 +102,8 @@
 
                         <tfoot>
                             <tr>
-                                <td rowspan="3" class="highlight">미국 여아<br>[Girls 2-6X]</td>
-                                <td class="highlight">사이즈</td>
+                                <th rowspan="3" class="highlight">미국 여아<br>[Girls 2-6X]</td>
+                                <th class="highlight">사이즈</td>
                                 <td>2T</td>
                                 <td>3T</td>
                                 <td>4T</td>
@@ -114,7 +114,7 @@
                             </tr>
 
                             <tr>
-                                <td class="highlight">키</td>
+                                <th class="highlight">키</td>
                                 <td>84-91</td>
                                 <td>91-99</td>
                                 <td>91-99</td>
@@ -125,7 +125,7 @@
                             </tr>
 
                             <tr>
-                                <td class="highlight">몸무게</td>
+                                <th class="highlight">몸무게</td>
                                 <td>13-15</td>
                                 <td>14-15</td>
                                 <td>13-15</td>
@@ -179,7 +179,7 @@
 
                         <tfoot>
                             <tr>
-                                <td>총합계</td>
+                                <th>총합계</th>
                                 <td class="Money">119,000원</td>
                                 <td class="Money">6,500원</td>
                                 <td class="Money">112,500원</td>
@@ -215,10 +215,16 @@
                             <option>일</option>
                         </select>
 
-                        <label for="sex">성별</label>
+                        <label for="male">성별</label>
                         <div class="sex_form clear_fix">
-                            <div><input type="radio" id="sex" name="radio_btn" class="check_form"> 남자</div>
-                            <div><input type="radio" name="radio_btn" class="check_form"> 여자</div>
+                            <div class="radio clear_fix">
+                                <input type="radio" class="sex_btn" id="male" name="gender" value="male">
+                                <label for="male" class="sex_label">남자</label>
+                            </div>
+                            <div class="radio clear_fix">
+                                <input type="radio" class="sex_btn" id="female" name="gender" value="male">
+                                <label for="female" class="sex_label">여자</label>
+                            </div>
                         </div>
 
                         <label for="user_email">이메일</label>
@@ -230,16 +236,47 @@
                         <input type="tel" class="input_form" placeholder=" 인증번호를 입력해주세요.">
 
 
-                        <label for="hobby">취미</label>
+                        <label for="exercise">취미</label>
                         <div class="hobby_form clear_fix">
-                            <div><input type="checkbox" id="hobby" class="check_form"> 운동</div>
-                            <div> <input type="checkbox" class="check_form"> 요리</div>
-                            <div><input type="checkbox" class="check_form"> 여행</div>
-                            <div><input type="checkbox" class="check_form"> 게임</div>
-                            <div><input type="checkbox" class="check_form"> 컴퓨터</div>
-                            <div><input type="checkbox" class="check_form"> 음악</div>
-                            <div><input type="checkbox" class="check_form"> 영화</div>
-                            <div><input type="checkbox" class="check_form"> 독서</div>
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="exercise" name="hobby" value="exercise">
+                                <label for="exercise" class="hobby_label">운동</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="cook" name="hobby" value="cook">
+                                <label for="cook" class="hobby_label">요리</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="travel" name="hobby" value="travel">
+                                <label for="travel" class="hobby_label">여행</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="game" name="hobby" value="game">
+                                <label for="game" class="hobby_label">게임</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="computer" name="hobby" value="computer">
+                                <label for="computer" class="hobby_label">컴퓨터</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="music" name="hobby" value="music">
+                                <label for="music" class="hobby_label">음악</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="movie" name="hobby" value="movie">
+                                <label for="movie" class="hobby_label">영화</label>
+                            </div>
+
+                            <div class="radio clear_fix">
+                                <input type="checkbox" class="hobby_btn" id="reading" name="hobby" value="reading">
+                                <label for="reading" class="hobby_label">독서</label>
+                            </div>
                         </div>
 
                         <label for="greetings">가입인사</label>
@@ -275,7 +312,7 @@
                     </div>
 
                     <h4>실시간 검색어</h4>
-                    <ul class="realtime_topic">
+                    <ol class="realtime_topic">
                         <li class="topic">
                             <div class="rank">1</div>
                             <a href="">입추</a>
@@ -316,7 +353,7 @@
                             <div class="rank">10</div>
                             <a href="">맛있는 녀석들</a>
                         </li>
-                    </ul>
+                    </ol>
 
                     <h4>쿠키 이용안내</h4>
                     <div class="cookieGuide">
@@ -347,7 +384,7 @@
                     <div class="News">
                         <ul>
                             <li class="article_1 clear_fix">
-                                <a href="" class="article_image"><img src="./images/thumbnail1.jpg" alt="img"></a>
+                                <a href="" class="article_image"><img src="./images/thumbnail1.jpg" alt="article-1"></a>
                                 <div class="article">
                                     <a href="" class="title">[날씨] 내일도 35도 안팎 폭염.내륙 소나기...습도 높아 후덥지근</a>
                                     <span class="content">오늘은 입추 절기지만 가을은 아직 멀리있는 것 같습니다. 일부 내륙에는 소나기가 지났지만 소나기도 더위의 기세를
@@ -368,7 +405,7 @@
                             </li>
 
                             <li class="clear_fix">
-                                <a href="" class="article_image"><img src="./images/thumbnail1.jpg" alt="img"></a>
+                                <a href="" class="article_image"><img src="./images/thumbnail1.jpg" alt="article-2"></a>
                                 <div class="article">
                                     <a href="" class="title">다이어트에 좋은 여름 복숭아, 먹으면 안되는 사람 있어</a>
                                     <span class="content">
@@ -387,7 +424,7 @@
                     <ul class="webtoon_box clear_fix">
                         <li class="webtoon_list">
                             <a href="" class="webtoon">
-                                <img src="./images/thumbnail2.jpg" alt="">
+                                <img src="./images/thumbnail2.jpg" alt="웹툰-하루 3컷">
                                 <div class="title_div clear_fix">
                                     <h5 class="title">하루 3컷</h5>
                                 </div>
@@ -397,7 +434,7 @@
 
                         <li class="webtoon_list">
                             <a href="" class="webtoon">
-                                <img src="./images/thumbnail2.jpg" alt="">
+                                <img src="./images/thumbnail2.jpg" alt="웹툰-유미의 세포들">
                                 <div class="title_div clear_fix">
                                     <div class="green_badge">컷툰</div>
                                     <h5 class="title">유미의 세포들</h5>
@@ -408,7 +445,7 @@
 
                         <li class="webtoon_list">
                             <a href="" class="webtoon">
-                                <img src="./images/thumbnail2.jpg" alt="">
+                                <img src="./images/thumbnail2.jpg" alt="웹툰-이말년씨리즈 2018">
                                 <div class="title_div clear_fix">
                                     <h5 class="title">이말년씨리즈 2018</h5>
                                 </div>
@@ -418,7 +455,7 @@
 
                         <li class="webtoon_list">
                             <a href="" class="webtoon">
-                                <img src="./images/thumbnail2.jpg" alt="">
+                                <img src="./images/thumbnail2.jpg" alt="웹툰-덴마">
                                 <div class="title_div clear_fix">
                                     <div class="red_badge">스마트툰</div>
                                     <h5 class="title">덴마</h5>
@@ -429,7 +466,7 @@
 
                         <li class="webtoon_list">
                             <a href="" class="webtoon">
-                                <img src="./images/thumbnail2.jpg" alt="">
+                                <img src="./images/thumbnail2.jpg" alt="웹툰-1인용 기분">
                                 <div class="title_div clear_fix">
                                     <div class="green_badge">컷툰</div>
                                     <h5 class="title">1인용 기분</h5>
@@ -440,7 +477,7 @@
 
                         <li class="webtoon_list">
                             <a href="" class="webtoon">
-                                <img src="./images/thumbnail2.jpg" alt="">
+                                <img src="./images/thumbnail2.jpg" alt="웹툰-찬란하지 않아도 괜찮아">
                                 <div class="title_div clear_fix">
                                     <h5 class="title">찬란하지 않아도 괜찮아</h5>
                                 </div>
