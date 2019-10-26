@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+body,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style: none;
+}
+
+.wrap {
+    position: relative;
+    width: 1285px;
+    height: 863px;
+    margin: 0 auto;
+    background-image: url(../images/promotion.PNG);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.link_point {
+    position: absolute;
+    width: 146px;
+    height: 22px;
+    top: 650px;
+    left: 150px;
+}
+
+.link_apply {
+    position: absolute;
+    width: 425px;
+    height: 90px;
+    top: 710px;
+    left: 440px;
+}

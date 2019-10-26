@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html,
+body,
+.wrap {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrap {
+    min-width: 800px;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.container {
+    min-height: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: lightsalmon;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: blueviolet;
+}
