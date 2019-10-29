@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+html,
+body,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+table {
+    width: 590px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 10px;
+    font-size: 12px;
+}
+
+table,
+th {
+    border: 1px solid #ececec;
+}
+
+th {
+    color: #777;
+}
+
+td {
+    border-top: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+}
+
+thead th {
+    height: 25px;
+}
+
+tbody .inner {
+    position: relative;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.today {
+    background-color: lightyellow;
+    border: 1px solid gray;
+}
+
+.special_day,
+.lunar {
+    font-style: normal;
+    display: block;
+    font-weight: bold;
+}
+
+.special_day {
+    margin: 5px 0 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dimmed {
+    color: lightgray
+}
+
+.anniversary {
+    color: blue;
+}
+
+
+.holiday {
+    color: red;
+}
+
+.lunar {
+    color: lightgray;
+    margin: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+table {
+    width: 500px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th {
+    font-weight: normal;
+}
+
+thead th {
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 3px solid black;
+}
+
+tbody th {
+    height: 40px;
+}
+
+thead th:nth-child(n+3) {
+    text-align: right;
+}
+
+tbody td {
+    text-align: right;
+}
+
+.col_age,
+.col_sex {
+    width: 90px;
+}
+
+tbody .sex {
+    background-color: #f8f8f8;
+}
+
+tbody th,
+td {
+    border-bottom: 1px solid #e1e1e1;
+}
