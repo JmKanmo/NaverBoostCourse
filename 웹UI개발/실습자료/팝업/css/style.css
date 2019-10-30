@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+html,
+body,
+p,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.popup::after {
+    display: inline-block;
+    content: "";
+    height: 100%;
+    vertical-align: middle;
+}
+
+.popup_table {
+    width: 100%;
+    height: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.popup_cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.popup_layer {
+    /*    
+    중앙정렬 case 1
+
+    width: 300px;
+    min-height: 150px;
+    padding-bottom: 50px;
+    background: #fff;
+    position: absolute;
+    margin: -150px 0 0 -100px;
+    top: 50%;
+    left: 50%;
+    z-index: 5; 
+     */
+
+    /*
+     중앙정렬 case 2
+
+    width: 300px;
+    height: 150px;
+    padding-bottom: 50px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 5;
+     */
+
+    /*
+    가변길이요소 정렬방법1
+
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    min-height: 150px;
+    padding-bottom: 50px;
+    background: #fff;
+    position: relative;
+    margin-right: -5px;
+    z-index: 5;
+    */
+
+    display: inline-block;
+    width: 300px;
+    min-height: 150px;
+    padding-bottom: 50px;
+    background: #fff;
+    position: relative;
+    z-index: 5;
+}
+
+.popup_dimmed {
+    position: absolute;
+    background-color: #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+.text_area {
+    padding: 50px 30px 50px 30px;
+    text-align: center;
+}
+
+.btn_area {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.btn_area::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.btn_area button {
+    float: left;
+    width: 50%;
+    height: 50px;
+    border: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn_area .btn_yes {
+    background-color: pink;
+}
+
+.btn_area .btn_no {
+    background-color: lightblue;
+}
