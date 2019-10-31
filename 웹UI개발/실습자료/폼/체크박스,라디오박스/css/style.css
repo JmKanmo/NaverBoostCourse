@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+html,
+body,
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 50px;
+}
+
+h1 {
+    margin: 50px 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+.check_form,
+.check_form2,
+.radio_form {
+    margin-top: 20px;
+}
+
+.check_form label::before {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    content: "";
+    width: 19px;
+    height: 19px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.check_form label {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 21px;
+    border-radius: 10px;
+    background-color: #666;
+    overflow: hidden;
+}
+
+.check_form input:checked+label {
+    background-color: blue;
+}
+
+.check_form input:checked+label::before {
+    left: auto;
+    right: 1px;
+}
+
+.check_form2 label::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 1px 8px -3px 0;
+    background: url(../images/checkbox.png)no-repeat;
+    background-size: 20px;
+    content: "";
+}
+
+.check_form2 input:checked+label::before {
+    background: url(../images/checkbox_on.png) no-repeat;
+    background-size: 20px;
+}
+
+.radio_form label::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 1px 8px -3px 0;
+    background: url(../images/radio.png) no-repeat;
+    background-size: 20px;
+    content: "";
+}
+
+.radio_form input:checked+label::before {
+    background: url(../images/radio_on.png)no-repeat;
+    background-size: 20px;
+}
