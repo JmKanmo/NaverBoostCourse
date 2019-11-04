@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: pink;
+    padding: 20px;
+}
+
+header::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.logo {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    padding: 0 5px;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+    font-size: 14px;
+    color: #000;
+}
+
+section {
+    overflow: hidden;
+    max-width: 900px;
+    padding: 50px 0 50px 0;
+    margin: 0 auto;
+}
+
+.list::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.list {
+    margin: -5px;
+}
+
+.list li {
+    float: left;
+    width: 20%;
+}
+
+.inner {
+    display: block;
+    margin: 5px;
+    border: 1px solid #000;
+}
+
+.thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media screen and (max-width:768px),
+screen and (max-height:768px) and(orientation:landscape) {
+    header {
+        background-color: lightseagreen;
+    }
+
+    .logo {
+        width: 100px;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav {
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin-top: 20px;
+        float: none;
+        white-space: nowrap;
+    }
+
+    nav a {
+        font-size: 25px;
+    }
+
+    footer {
+        background-color: lightcoral;
+        color: #fff;
+    }
+
+    .list {
+        margin: -4px;
+    }
+
+    .list li {
+        width: 25%;
+    }
+
+    .inner {
+        position: relative;
+        margin: 4px;
+    }
+
+    .title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px 0 10px 0;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+}
