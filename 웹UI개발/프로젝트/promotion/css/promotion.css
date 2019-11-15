@@ -1,15 +1,29 @@
 @charset "utf-8";
 
+/* 초기화 */
 html,
 body,
 ul,
-li,
+ol li,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
     padding: 0;
     font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol,
+ul {
+    list-style: none;
 }
 
 /* 숨김처리 */
@@ -54,45 +68,297 @@ h3 {
 }
 
 .mainbanner_section {
+    position: relative;
     width: 100%;
     height: 750px;
     background: url(../image/section_invite.jpg) center no-repeat;
 }
 
+.mainbanner_section .phrase_1 {
+    position: absolute;
+    width: 727px;
+    top: 245px;
+    left: 40%;
+    height: 197px;
+    font-size: 90px;
+}
+
+.mainbanner_section .phrase_2 {
+    position: absolute;
+    top: 489px;
+    width: 527px;
+    left: 40%;
+    height: 100px;
+    font-size: 25px;
+}
+
 /* 크리에이터 영역 */
 .creator_section {
+    position: relative;
     width: 100%;
     height: 822px;
     background: url(../image/section_creator.jpg) center no-repeat;
 }
 
+.creator_section .phrase_1 {
+    position: absolute;
+    top: 95px;
+    left: 40%;
+    font-size: 53px;
+}
+
+.creator_section .phrase_2 {
+    position: absolute;
+    top: 182px;
+    font-size: 21px;
+    left: 40%;
+    height: 70px;
+    width: 820px;
+}
+
+.creator_section .step_list {
+    position: absolute;
+    top: 595px;
+    left: 0;
+    right: 0;
+    width: 900px;
+    height: 300px;
+    margin: auto;
+}
+
+.step_list li {
+    float: left;
+}
+
+.step_list li:nth-child(n+1) {
+    margin-left: 60px;
+}
+
+.step_list li button {
+    width: 100px;
+    height: 40px;
+}
+
+.step_list li span {
+    display: block;
+    margin-top: 18px;
+    height: 55px;
+    width: 236px;
+    font-size: 20px;
+}
+
 /* 스토어 영역 */
-.store_content {
+.store_section {
+    position: relative;
     width: 100%;
     height: 1084px;
     background: url(../image/section_store.jpg) center no-repeat;
 }
 
+.store_section .phrase_1 {
+    position: absolute;
+    top: 95px;
+    font-size: 60px;
+    left: 40%;
+}
+
+.store_section .phrase_2 {
+    position: absolute;
+    top: 180px;
+    width: 650px;
+    left: 40%;
+    font-size: 20px;
+}
+
+.food_list {
+    box-sizing: border-box;
+    width: 980px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 300px;
+}
+
+.food_list+.food_list {
+    margin-top: 360px;
+}
+
+.food_list .food {
+    float: left;
+    width: 230px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.food_list .food:nth-child(4n-3) {
+    margin-left: 0;
+}
+
+.food .food_img {
+    position: relative;
+    height: 230px;
+    display: block;
+    border-radius: 10px;
+}
+
+.food_img.apple {
+    background: url(../image/thumbnail_apple.jpg) no-repeat;
+}
+
+.food_img.onion {
+    background: url(../image/thumbnail_onion.jpg) no-repeat;
+}
+
+.food_img.banana {
+    background: url(../image/thumbnail_banana.jpg) no-repeat;
+}
+
+.food_img.kiwi {
+    background: url(../image/thumbnail_kiwi.jpg) no-repeat;
+}
+
+.food_img.brocolli {
+    background: url(../image/thumbnail_broccoli.jpg) no-repeat;
+}
+
+.food_img.lemon {
+    background: url(../image/thumbnail_lemon.jpg) no-repeat;
+}
+
+.food_img.garlic {
+    background: url(../image/thumbnail_garlic.jpg) no-repeat;
+}
+
+.food_img.tomato {
+    background: url(../image/thumbnail_tomato.jpg) no-repeat;
+}
+
+.food_img .discount_info {
+    display: none;
+}
+
+.food_img .discount_info {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: auto;
+    height: 100px;
+}
+
+.discount_info .percentage {
+    font-size: 65px;
+    color: #fff;
+}
+
+.discount_info .deadline {
+    font-size: 20px;
+    color: #fff;
+}
+
+.food .food_img:hover .discount_info,
+.food .food_img:focus .discount_info {
+    display: block;
+}
+
+.food .food_img:hover::after,
+.food .food_img:focus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(96, 132, 2, 0.9);
+}
+
+.food .food_name {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    color: #1b1d21;
+    margin: 20px 10px 5px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.food .food_price {
+    font-size: 28px;
+    color: #1b1d21;
+    font-weight: bold;
+}
+
 /* 레서피영역 */
 .recipe_wrap {
     position: relative;
-    z-index: 3;
+    z-index: 0;
     height: 1030px;
 }
 
-.recipe_content {
+.recipe_section {
+    position: relative;
     width: 100%;
     height: 850px;
     background: url(../image/section_recipe.png) center no-repeat;
 }
 
-.recipe_content .pattern_list {
+.recipe_section .phrase_1 {
+    position: absolute;
+    top: 85px;
+    font-size: 52px;
+    left: 44%;
+}
+
+.recipe_section .phrase_2 {
+    position: absolute;
+    top: 166px;
+    left: 44%;
+    width: 653px;
+}
+
+.recipe_link_box {
+    position: absolute;
+    top: 284px;
+    left: 0;
+    right: 0;
+    width: 980px;
+    margin: auto;
+    height: 482px;
+}
+
+.recipe_link_box .recipe_link {
+    float: left;
+    width: 480px;
+    height: 482px;
+}
+
+.recipe_link+.recipe_link {
+    margin-left: 20px;
+}
+
+.recipe_info {
+    position: absolute;
+    bottom: 80px;
+    width: 400px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.recipe_section .pattern_list {
     position: absolute;
     top: 405px;
     z-index: -5;
+    left: 0;
+    right: 0;
 }
 
-.recipe_content .pattern {
+.recipe_section .pattern {
     float: left;
     height: 180px;
     width: 33%;
@@ -111,10 +377,20 @@ h3 {
     background: url(../image/go_recipe.gif)no-repeat;
 }
 
+.recipe_viewall:hover,
+.recipe_viewall:focus {
+    background: url(../image/go_recipe_over.gif)no-repeat;
+}
+
 /* FAG영역 */
 
-.FAQ_content {
+.FAQ_wrap {
+    margin-top: 50px;
+}
+
+.FAQ_section {
     width: 1050px;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -141,6 +417,7 @@ h3 {
 .Q_box .question {
     width: 940px;
     float: left;
+    text-align: left;
     font-size: 20px;
     color: #1b1d21;
     line-height: 28px;
@@ -234,4 +511,28 @@ h3 {
 
 .footer .highlight {
     font-weight: bold;
+}
+
+/* 미디어쿼리영역 */
+@media screen and (min-width: 1920px),
+(orientation: landscape) {
+    .mainbanner_wrap {
+        background: #fff;
+    }
+
+    .creator_wrap {
+        background: #f9939d;
+    }
+
+    .store_wrap {
+        background: #d5e43f;
+    }
+
+    .recipe_wrap {
+        background: #b893f9;
+    }
+
+    .FAQ_wrap {
+        background: #fff;
+    }
 }
