@@ -52,27 +52,32 @@ ul {
     top: 0;
     left: 0;
     background-color: rgb(64, 64, 64, 0.75);
+    text-align: center;
 }
 
 .header .logo_box {
     display: inline-block;
     height: 30px;
-    width: 100%;
-    background: url(../image/logo.png) center no-repeat;
+    width: 1000px;
     margin-top: 20px;
-    margin: 17px 0 0 -440px;
+    min-width: 500px;
 }
 
 .logo_box .logo {
     display: block;
     width: 130px;
     height: 30px;
-    margin: 0 auto;
+    background: url(../image/logo.png)no-repeat;
+    cursor: pointer;
 }
 
 /* 매인베너 영역 */
 .main_wrap {
     padding-bottom: 100px;
+}
+
+.mainbanner_wrap {
+    background: #fff;
 }
 
 .mainbanner_section {
@@ -84,6 +89,10 @@ ul {
 
 
 /* 크리에이터 영역 */
+.creator_wrap {
+    background: #f9939d;
+}
+
 .creator_section {
     position: relative;
     width: 100%;
@@ -91,38 +100,12 @@ ul {
     background: url(../image/section_creator.jpg) center no-repeat;
 }
 
-.creator_section .step_list {
-    position: absolute;
-    top: 595px;
-    left: 0;
-    right: 0;
-    width: 900px;
-    height: 300px;
-    margin: auto;
-}
-
-.step_list li {
-    float: left;
-}
-
-.step_list li:nth-child(n+1) {
-    margin-left: 60px;
-}
-
-.step_list li button {
-    width: 100px;
-    height: 40px;
-}
-
-.step_list li span {
-    display: block;
-    margin-top: 18px;
-    height: 55px;
-    width: 236px;
-    font-size: 20px;
-}
 
 /* 스토어 영역 */
+.store_wrap {
+    background: #d5e43f;
+}
+
 .store_section {
     position: relative;
     width: 100%;
@@ -235,12 +218,13 @@ ul {
     top: 0;
     bottom: 0;
     background-color: rgb(96, 132, 2, 0.9);
+    border-radius: 10px;
 }
 
 .food .food_name {
     display: block;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     color: #1b1d21;
     margin: 20px 10px 5px 10px;
     overflow: hidden;
@@ -259,6 +243,7 @@ ul {
     position: relative;
     z-index: 0;
     height: 1030px;
+    background: #b893f9;
 }
 
 .recipe_section {
@@ -288,31 +273,15 @@ ul {
     margin-left: 20px;
 }
 
-.recipe_info {
+.recipe_section .pattern_img {
     position: absolute;
-    bottom: 80px;
-    width: 400px;
-    text-align: center;
-    margin-left: 30px;
-}
-
-.recipe_section .pattern_list {
-    position: absolute;
-    top: 405px;
-    z-index: -5;
-    left: 0;
-    right: 0;
-}
-
-.recipe_section .pattern {
-    float: left;
-    height: 180px;
-    width: 33%;
-}
-
-.pattern img {
     width: 100%;
-    height: 100%;
+    height: 190px;
+    background: url(../image/pattern_recipe.png)repeat-x;
+    top: 140px;
+    z-index: -1;
+    bottom: 0;
+    margin: auto;
 }
 
 .recipe_viewall {
@@ -432,6 +401,7 @@ ul {
     color: #60656e;
     font-size: 16px;
     line-height: 28px;
+    text-align: left;
 }
 
 /* TOP영역 */
@@ -442,6 +412,7 @@ ul {
     width: 100px;
     height: 100px;
     background: url(../image/go_top.gif)no-repeat;
+    z-index: 10;
 }
 
 /* 푸터영역 */
@@ -457,28 +428,4 @@ ul {
 
 .footer .highlight {
     font-weight: bold;
-}
-
-/* 미디어쿼리영역 */
-@media screen and (min-width: 1920px),
-(orientation: landscape) {
-    .mainbanner_wrap {
-        background: #fff;
-    }
-
-    .creator_wrap {
-        background: #f9939d;
-    }
-
-    .store_wrap {
-        background: #d5e43f;
-    }
-
-    .recipe_wrap {
-        background: #b893f9;
-    }
-
-    .FAQ_wrap {
-        background: #fff;
-    }
 }
