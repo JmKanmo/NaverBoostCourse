@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/* 초기화 */
+html,
+body,
+h1,
+h2,
+h3,
+ul,
+ol,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.clear_fix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
+}
+
+/* 헤더영역 */
+.header {
+    display: block;
+    height: 50px;
+    background-color: #fff;
+}
+
+.header .logo_box {
+    float: left;
+    height: 30px;
+    width: 94px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.logo_box .logo {
+    width: 100%;
+    background: url(../image/logo_m.png)no-repeat;
+    background-size: contain;
+    height: 100%;
+    display: block;
+}
+
+.header .tab_box {
+    float: right;
+    width: 46px;
+    height: 50px;
+    padding: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.tab_box .tab {
+    display: block;
+    background: url(../image/icon_menu.png)50% no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+
+/* 메인배너영역 */
+.main_banner {
+    position: relative;
+    background-color: #ffee02;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main_banner .menu_box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+    padding: 10px 0 10px 0;
+    height: 108px;
+    background: #fff;
+    margin-top: -20px;
+}
+
+.menu_box .menu_link {
+    display: block;
+    text-align: center;
+}
+
+.menu_link li {
+    height: 36px;
+    font-size: 22px;
+    color: #333;
+}
+
+.menu_box.active {
+    display: block;
+}
+
+.main_banner .image {
+    width: 250px;
+    height: 180px;
+    margin: 0 auto 5px;
+    background: url(../image/banner_strawberry.png)no-repeat;
+    background-size: contain;
+}
+
+.main_banner .title {
+    padding: 0 35px 0 35px;
+    font-size: 22px;
+    color: #333;
+    line-height: 28px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 56px;
+}
+
+.main_banner .underline {
+    border-bottom: 1px solid black;
+    margin: 25px auto;
+    width: 43px;
+}
+
+.main_banner .profile_box {
+    width: 150px;
+    padding: 10px 0 30px 0;
+    margin: 0 auto;
+}
+
+.profile_box .profile {
+    float: left;
+    background: url(../image/thumbnail_profile_none.jpg)no-repeat;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    position: relative;
+    top: -6px;
+}
+
+.profile_box .profile::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50px;
+    background: url(../image/thumbnail_profile.jpg)no-repeat;
+    background-size: contain;
+}
+
+.profile_box .profile_name {
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 메인리스트영역 */
+
+.main_list {
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+
+.main_list .img_list .list {
+    padding-bottom: 20px;
+}
+
+.main_list .img_box .image {
+    width: 100%;
+    height: 100%;
+}
+
+.main_list .img_box {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.main_list .img_box .image_title {
+    padding: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #333;
+}
+
+.main_list .showmore_btn {
+    border-style: none;
+    background-color: #fff;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.showmore_btn .icon {
+    width: 16px;
+    height: 21px;
+    position: relative;
+    top: 3px;
+}
