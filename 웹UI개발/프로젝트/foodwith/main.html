@@ -23,9 +23,7 @@
                     <span class="blind">탭버튼</span>
                 </div>
             </div>
-        </header>
 
-        <div class="main_banner">
             <div class="menu_box">
                 <a href="" class="menu_link">
                     <ul>
@@ -35,7 +33,9 @@
                     </ul>
                 </a>
             </div>
+        </header>
 
+        <a href="" class="main_banner">
             <div class="image">
                 <span class="blind">딸기</span>
             </div>
@@ -50,7 +50,7 @@
                 <div class="profile"><span class="blind">프로필이미지</span></div>
                 <h3 class="profile_name">FULLMOON</h3>
             </div>
-        </div>
+        </a>
 
         <div class="main_list">
             <ul class="img_list">
@@ -105,7 +105,33 @@
             </button>
         </div>
 
+        <div class="main_form">
+            <div class="title_box">
+                <h1 class="title">전하고 싶은 말을 남겨주세요.</h1>
+                <p class="subtitle">답변을 원하시면 이메일을 꼭 적어주세요.</p>
+            </div>
 
+            <form action="./main.html" class="form_box">
+                <label for="nickname">닉네임</label>
+                <input type="text" id="nickname" placeholder="NICKNAME">
+
+                <label for="email">이메일</label>
+                <div class="email_box clear_fix">
+                    <div class="id_form">
+                        <input type="text" id="email" placeholder="ID" class="id_form">
+                    </div>
+                    <div class="select_form">
+                        <select name="address" id="">
+                            <option value="">@ 선택하세요</option>
+                        </select>
+                    </div>
+                </div>
+
+                <textarea class="userTextarea" name="text" id="" cols="8" rows="10" placeholder="
+                전하고 싶은 말을 100자 이내로 적어주세요.
+                "></textarea>
+            </form>
+        </div>
     </div>
 </body>
 

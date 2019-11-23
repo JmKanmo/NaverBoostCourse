@@ -37,6 +37,7 @@ a {
 
 /* 헤더영역 */
 .header {
+    position: relative;
     display: block;
     height: 50px;
     background-color: #fff;
@@ -74,24 +75,16 @@ a {
     height: 100%;
 }
 
-/* 메인배너영역 */
-.main_banner {
-    position: relative;
-    background-color: #ffee02;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.main_banner .menu_box {
+.header .menu_box {
     position: absolute;
     left: 0;
     right: 0;
+    top: 50px;
     margin: auto;
     display: none;
     padding: 10px 0 10px 0;
     height: 108px;
     background: #fff;
-    margin-top: -20px;
 }
 
 .menu_box .menu_link {
@@ -107,6 +100,14 @@ a {
 
 .menu_box.active {
     display: block;
+}
+
+/* 메인배너영역 */
+.main_banner {
+    display: block;
+    background-color: #ffee02;
+    text-align: center;
+    padding-top: 20px;
 }
 
 .main_banner .image {
@@ -187,10 +188,11 @@ a {
 .main_list .img_box .image {
     width: 100%;
     height: 100%;
+    border: 1px solid rgba(0, 0, 0, 10%);
 }
 
 .main_list .img_box {
-    padding-bottom: 20px;
+    display: block;
     text-align: center;
 }
 
@@ -207,7 +209,7 @@ a {
     border-style: none;
     background-color: #fff;
     width: 100%;
-    height: 50px;
+    height: 60px;
     border: 1px solid #d1d1d1;
     font-size: 16px;
     color: #333;
@@ -219,4 +221,122 @@ a {
     height: 21px;
     position: relative;
     top: 3px;
+}
+
+/* 폼 영역 */
+.main_form {
+    text-align: center;
+    padding: 30px 15px 25px 15px;
+    background-color: #f4f5f7;
+}
+
+.main_form .title_box {
+    padding-bottom: 20px;
+}
+
+.title_box .title {
+    font-size: 22px;
+    color: #333;
+    padding-bottom: 10px;
+}
+
+.title_box .subtitle {
+    font-size: 14px;
+    color: #333;
+    padding-left: 10px;
+}
+
+.main_form .form_box {
+    padding: 0 25px 25px 25px;
+    background: #fff;
+    text-align: left;
+}
+
+.form_box label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    padding: 25px 0 15px 0;
+}
+
+.form_box input[type="text"] {
+    border-style: none;
+    border-bottom: 1px solid #c1c1c1;
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+.form_box .nickname_input {
+    width: 100%;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 14px;
+    color: #acacac;
+}
+
+input[type="text"]::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 14px;
+    color: #acacac;
+}
+
+input[type="text"]:-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 14px;
+    color: #acacac;
+}
+
+input[type="text"]:-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 14px;
+    color: #acacac;
+}
+
+.email_box {
+    padding-bottom: 25px;
+}
+
+.email_box .id_form {
+    float: left;
+    width: 45%;
+}
+
+.email_box .select_form {
+    position: relative;
+    width: 48%;
+    text-align: left;
+    border-bottom: 1px solid #c1c1c1;
+    float: right;
+}
+
+.select_form select {
+    width: 100%;
+    height: 100%;
+    border: 0 none;
+    -webkit-appearance: none;
+    margin-left: -15px;
+    padding-bottom: 7px;
+}
+
+.select_form::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    right: 0;
+    background: url(../image/icon_arrow_email.png)no-repeat;
+    background-size: contain;
+    width: 13px;
+    height: 13px;
+}
+
+.main_form .userTextarea {
+    width: 100%;
+    resize: none;
+    border: 1px solid #c1c1c1;
+    box-sizing: border-box;
 }
