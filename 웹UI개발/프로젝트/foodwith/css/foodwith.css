@@ -247,9 +247,11 @@ a {
 }
 
 .main_form .form_box {
+    position: relative;
     padding: 0 25px 25px 25px;
     background: #fff;
     text-align: left;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
 }
 
 .form_box label {
@@ -273,25 +275,29 @@ a {
     width: 100%;
 }
 
-input[type="text"]::-webkit-input-placeholder {
+input[type="text"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     font-size: 14px;
     color: #acacac;
 }
 
-input[type="text"]::-moz-placeholder {
+input[type="text"]::-moz-placeholder,
+textarea::-moz-placeholder {
     /* Firefox 19+ */
     font-size: 14px;
     color: #acacac;
 }
 
-input[type="text"]:-ms-input-placeholder {
+input[type="text"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
     /* IE 10+ */
     font-size: 14px;
     color: #acacac;
 }
 
-input[type="text"]:-moz-placeholder {
+input[type="text"]:-moz-placeholder,
+textarea:-moz-placeholder {
     /* Firefox 18- */
     font-size: 14px;
     color: #acacac;
@@ -303,12 +309,12 @@ input[type="text"]:-moz-placeholder {
 
 .email_box .id_form {
     float: left;
-    width: 45%;
+    width: 50%;
 }
 
 .email_box .select_form {
     position: relative;
-    width: 48%;
+    width: 50%;
     text-align: left;
     border-bottom: 1px solid #c1c1c1;
     float: right;
@@ -323,6 +329,16 @@ input[type="text"]:-moz-placeholder {
     padding-bottom: 7px;
 }
 
+.select_form::before {
+    position: absolute;
+    content: "";
+    width: 23px;
+    height: 11px;
+    top: 19px;
+    left: -21px;
+    background: #fff;
+}
+
 .select_form::after {
     position: absolute;
     content: "";
@@ -335,8 +351,27 @@ input[type="text"]:-moz-placeholder {
 }
 
 .main_form .userTextarea {
+    border: 1px solid #c1c1c1;
+    padding: 10px 10px 0 10px;
+}
+
+.userTextarea textarea {
     width: 100%;
     resize: none;
-    border: 1px solid #c1c1c1;
-    box-sizing: border-box;
+    border: 0 none;
+    padding: 0;
 }
+
+.main_form .send_box {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    border: 2px solid #bdbdbd;
+    background-color: #e9e9e9;
+    font-size: 11px;
+    color: #666;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+/* 공지사항영역 */
