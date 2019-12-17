@@ -12,27 +12,31 @@
 <body>
     <div class="wrap">
         <!-- 헤더 -->
-        <header class="header clear_fix">
-            <a href="" class="logo_box">
-                <div class="logo">
-                    <h1 class="blind">푸드위드</h1>
-                </div>
-            </a>
-
-            <div class="tab_box">
-                <div class="tab">
-                    <span class="blind">탭버튼</span>
-                </div>
-            </div>
-
-            <div class="menu_box">
-                <a href="" class="menu_link">
-                    <ul>
-                        <li>About</li>
-                        <li>Work</li>
-                        <li>Contact</li>
-                    </ul>
+        <header class="header">
+            <div class="header_box  clear_fix">
+                <a href="" class="logo_box">
+                    <div class="logo">
+                        <h1 class="blind">푸드위드</h1>
+                    </div>
                 </a>
+
+                <div class="tab_box">
+                    <div class="tab">
+                        <span class="blind">탭버튼</span>
+                    </div>
+                </div>
+
+                <ul class="menu_box clear_fix">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+
+                <ul class="header_menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
         </header>
 
@@ -60,59 +64,57 @@
                 <li class="list">
                     <a href="" class="img_box">
                         <img src="./image/thumbnail_pumpkin.jpg" alt="호박" class="image">
-                        <h2 class="image_title">따뜻 담백 호박! 든든한 호박죽으로 한끼 해결...</h2>
+                        <h2 class="image_title shortening">따뜻 담백 호박! 든든한 호박죽으로 한끼 해결...</h2>
                     </a>
                 </li>
 
                 <li class="list">
                     <a href="" class="img_box">
                         <img src="./image/thumbnail_lime.jpg" alt="라임" class="image">
-                        <h2 class="image_title">상큼한 라임청 담기</h2>
+                        <h2 class="image_title shortening">상큼한 라임청 담기</h2>
                     </a>
                 </li>
 
                 <li class="list">
                     <a href="" class="img_box">
                         <img src="./image/thumbnail_paprika.jpg" alt="피망" class="image">
-                        <h2 class="image_title">아삭아삭 빨간 피망 볶음 레시피</h2>
+                        <h2 class="image_title shortening">아삭아삭 빨간 피망 볶음 레시피</h2>
                     </a>
                 </li>
 
                 <li class="list">
                     <a href="" class="img_box">
                         <img src="./image/thumbnail_garlic.jpg" alt="마늘" class="image">
-                        <h2 class="image_title">바삭바삭 마늘빵 만들기</h2>
+                        <h2 class="image_title shortening">바삭바삭 마늘빵 만들기</h2>
                     </a>
                 </li>
 
                 <li class="list">
                     <a href="" class="img_box">
                         <img src="./image/thumbnail_onion.jpg" alt="양파" class="image">
-                        <h2 class="image_title">자색 빛깔 적양파 피클 담기</h2>
+                        <h2 class="image_title shortening">자색 빛깔 적양파 피클 담기</h2>
                     </a>
                 </li>
 
                 <li class="list">
                     <a href="" class="img_box">
                         <img src="./image/thumbnail_avocado.jpg" alt="아보카도" class="image">
-                        <h2 class="image_title">건강한 아보카도 샌드위치 만들기</h2>
+                        <h2 class="image_title shortening">건강한 아보카도 샌드위치 만들기</h2>
                     </a>
                 </li>
             </ul>
 
             <button class="showmore_btn">
-                <div class="btn_menu">
-                    <img src="./image/icon_arrow_more.png" alt="" class="icon">
-                    <span>더보기</span>
-                </div>
+                <img src="./image/icon_arrow_more.png" alt="" class="icon">
+                <span>더보기</span>
             </button>
         </div>
 
         <!-- 매인폼 -->
         <div class="main_form">
             <div class="title_box">
-                <h1 class="title">전하고 싶은 말을 남겨주세요.</h1>
-                <p class="subtitle">답변을 원하시면 이메일을 꼭 적어주세요.</p>
+                <h2 class="title">전하고 싶은 말을 남겨주세요.</h2>
+                <h3 class="subtitle">답변을 원하시면 이메일을 꼭 적어주세요.</h3>
             </div>
 
             <form action="./main.html" class="form_box">
@@ -125,14 +127,14 @@
                         <input type="text" id="email" placeholder="ID" class="id_form">
                     </div>
                     <div class="select_form">
-                        <select name="address" id="">
+                        <select name="address">
                             <option value="">@ 선택하세요</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="userTextarea">
-                    <textarea name="name" id="" cols="8" rows="10" placeholder="전하고 싶은 말을 100자 이내로 적어주세요."></textarea>
+                    <textarea name="name" cols="8" rows="10" placeholder="전하고 싶은 말을 100자 이내로 적어주세요."></textarea>
                 </div>
 
                 <button class="send_box">전송하기</button>
@@ -141,8 +143,43 @@
 
         <!-- 매인공지사항 -->
         <div class="main_notice">
+            <div class="notice">
+                <h2 class="title">공지사항</h2>
+                <nav class="clear_fix">
+                    <a href="" class=" left shortening">다양한 소식을 담은 foodwith! 정식 오픈을 안내드립니다.</a>
+                    <a href="" class="right">더보기</a>
+                </nav>
+            </div>
 
+            <div class="creators">
+                <h2 class="title">Creators</h2>
+                <nav class="clear_fix">
+                    <a href="" class=" left shortening">푸드 크리에이터</a>
+                    <a href="" class="right">푸드 비즈니스</a>
+                </nav>
+            </div>
+
+            <div class="partners">
+                <h2 class="title">Partners</h2>
+                <nav class="clear_fix">
+                    <a href="" class=" left shortening">푸드 파트너</a>
+                    <a href="" class="right">푸드 스토어</a>
+                </nav>
+            </div>
         </div>
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <ul class="menu clear_fix">
+                <li>회사소개</li>
+                <li>인재채용</li>
+                <li>이용약관</li>
+                <li>고객센터</li>
+            </ul>
+            <span class="rights">ⓒ <span class="highlight">foodwith</span>
+                All Right Reserved.
+            </span>
+        </footer>
     </div>
 </body>
 
