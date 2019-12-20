@@ -17,6 +17,7 @@ p {
 
 a {
     text-decoration: none;
+    outline: none;
     color: #000;
 }
 
@@ -161,19 +162,19 @@ a {
 
 /* 메인리스트영역 */
 
-.main_list {
-    padding: 15px;
+.main_list_box {
     background-color: #f0f0f0;
 }
 
-.main_list .img_list .list {
-    padding-bottom: 15px;
+.main_list {
+    padding: 20px 0 20px 0;
 }
 
 .main_list .img_box .image {
     width: 100%;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 10%);
+    box-sizing: border-box;
 }
 
 .main_list .img_box {
@@ -181,10 +182,9 @@ a {
     text-align: center;
 }
 
-.main_list .img_box .image_title {
-    padding: 12px;
-    font-size: 14px;
+.img_box .image_title_box h2 {
     color: #333;
+    font-size: 18px;
 }
 
 .main_list .showmore_btn {
@@ -206,31 +206,22 @@ a {
 }
 
 /* 폼 영역 */
-.main_form {
-    text-align: center;
-    padding: 30px 15px 25px 15px;
+.main_form_box {
     background-color: #f4f5f7;
 }
 
 .main_form .title_box {
     padding-bottom: 20px;
+    text-align: center;
+    color: #333;
 }
 
 .title_box .title {
-    font-size: 22px;
-    color: #333;
     padding-bottom: 10px;
-}
-
-.title_box .subtitle {
-    font-size: 14px;
-    color: #333;
-    padding-left: 10px;
 }
 
 .main_form .form_box {
     position: relative;
-    padding: 0 25px 25px 25px;
     background: #fff;
     text-align: left;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
@@ -248,6 +239,7 @@ a {
     border-style: none;
     border-bottom: 1px solid #c1c1c1;
     font-size: 14px;
+    color: #333;
     padding-bottom: 8px;
     width: 100%;
 }
@@ -301,6 +293,8 @@ a {
     width: 100%;
     height: 100%;
     border: 0 none;
+    font-size: 14px;
+    color: #333;
     -webkit-appearance: none;
     margin-left: -15px;
     padding-bottom: 7px;
@@ -342,10 +336,10 @@ a {
 .main_form .send_box {
     position: absolute;
     top: 15px;
-    right: 25px;
+    right: 50px;
     border: 2px solid #bdbdbd;
     background-color: #e9e9e9;
-    font-size: 11px;
+    font-size: 15px;
     color: #666;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
@@ -435,7 +429,7 @@ a {
 
 /* 320px 이상 && 768px미만 */
 
-@media all and (min-width:320px) and (max-width:767px) {
+@media (min-width:320px) and (max-width:767px) {
 
     /* 헤더영역 */
     .header .logo_box {
@@ -515,10 +509,54 @@ a {
     .profile_box .profile_name {
         font-size: 16px;
     }
+
+    /* 매인리스트 영역 */
+
+    .main_list .img_list .list {
+        padding-bottom: 15px;
+    }
+
+    .main_list .img_box {
+        margin: 0 15px 0 15px;
+    }
+
+    .img_box .image_title_box {
+        line-height: 40px;
+    }
+
+    .image_title_box h2 {
+        font-size: 14px;
+    }
+
+    .shower_btn_box {
+        padding: 0 15px 0 15px;
+    }
+
+    /* 매인 폼영역 */
+    .main_form {
+        padding: 30px 15px 25px 15px;
+    }
+
+    .title_box .subtitle {
+        font-size: 14px;
+    }
+
+    .title_box .title {
+        font-size: 22px;
+    }
+
+    .main_form .form_box {
+        padding: 0 25px 25px 25px;
+    }
+
+    .main_form .send_box {
+        font-size: 11px;
+        right: 25px;
+    }
 }
 
 /* 768px이상 && 1024 */
-@media all and (min-width:768px) and (max-width:1023px) {
+@media (min-width:768px) and (max-width:1023px) {
 
     /* 헤더영역 */
     .header .logo_box {
@@ -560,9 +598,54 @@ a {
     .profile_box .profile_name {
         font-size: 18px;
     }
+
+    /* 매인리스트 영역 */
+    .img_list .list {
+        width: 50%;
+        float: left;
+    }
+
+    .main_list .img_list .list {
+        padding-bottom: 20px;
+    }
+
+    .img_list .list:nth-child(2n+1) a {
+        margin-left: 34px;
+        margin-right: 10px;
+    }
+
+    .img_list .list:nth-child(2n) a {
+        margin-left: 10px;
+        margin-right: 34px;
+    }
+
+    .img_box .image_title_box {
+        line-height: 50px;
+    }
+
+    .shower_btn_box {
+        padding: 0 34px 0 34px;
+    }
+
+    /* 매인 폼영역 */
+    .main_form {
+        padding: 30px 34px 30px 34px;
+    }
+
+    .title_box .subtitle {
+        font-size: 18px;
+    }
+
+    .title_box .title {
+        font-size: 30px;
+    }
+
+    .main_form .form_box {
+        padding: 0 50px 50px 50px;
+    }
 }
 
-@media all and (min-width:1024px) {
+@media (min-width:1024px) {
 
     /* 헤더영역 */
     .header_box {
@@ -618,4 +701,60 @@ a {
     .profile_box .profile_name {
         font-size: 18px;
     }
+
+    /* 매인리스트 영역 */
+    .main_list {
+        width: 988px;
+        margin: 0 auto;
+    }
+
+    .img_list .list {
+        width: 316px;
+        height: 316px;
+        float: left;
+        position: relative;
+        margin: 0 0 20px 20px;
+    }
+
+    .img_list .list:nth-child(3n-2) {
+        margin-left: 0;
+    }
+
+    .img_list .img_box::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+    }
+
+    .img_box .image_title_box {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60px;
+        line-height: 60px;
+        background-color: #fff;
+        display: none;
+    }
+
+    .img_list .img_box:hover .image_title_box,
+    .img_list .img_box:focus .image_title_box {
+        display: block;
+    }
+
+    .img_list .img_box:hover::after,
+    .img_list .img_box:focus::after {
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* 매인 폼영역 */
+    .main_form {
+        width: 988px;
+        margin: 0 auto;
+    }
+
 }
