@@ -9,7 +9,8 @@ h3,
 ul,
 ol,
 p,
-a {
+a,
+figure {
     margin: 0;
     padding: 0;
     font-family: '나눔 고딕', NanumGothic, '돋움', Dotum, sans-serif;
@@ -412,12 +413,12 @@ a {
 }
 
 .view_title li {
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 /* 뷰 정보영역 */
 .food_info_box {
-    padding: 0 15px 0 15px;
+    padding: 0 15px 10px 15px;
     background-color: #f0f0f0;
 }
 
@@ -428,7 +429,7 @@ a {
 .food_info .title {
     font-size: 16px;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .food_info .info {
@@ -441,7 +442,64 @@ a {
     font-size: 14px;
     color: #3b9a7b;
     display: inline-block;
+    text-decoration: underline;
     margin-top: 5px;
+}
+
+.food_info .recipe {
+    padding-left: 18px;
+    list-style-type: decimal;
+    font-size: 14px;
+    color: #666;
+}
+
+.food_info .recipe li {
+    margin-bottom: 5px;
+}
+
+.food_info .guide_table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.guide_table span {
+    line-height: 23px;
+}
+
+.guide_table,
+.guide_table th {
+    border: 1px solid #c1c1c1;
+}
+
+.guide_table th {
+    text-align: left;
+    padding: 10px;
+    background-color: #eaeaea;
+}
+
+.guide_table td {
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    border-left: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.food_info figure {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.food_info figure img {
+    width: 100%;
+}
+
+.food_info figure figcaption {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 0 30px 0;
 }
 
 /* 푸터영역 */
