@@ -196,7 +196,7 @@ a {
     top: 3px;
 }
 
-/* 폼 영역 */
+/* 매인폼 영역 */
 .main_form_box {
     background-color: #f4f5f7;
 }
@@ -334,7 +334,7 @@ a {
     padding: 5px 10px 5px 10px;
 }
 
-/* 공지사항영역 */
+/* 매인공지사항영역 */
 .main_notice_box {
     background-color: #f0f0f0;
 }
@@ -380,6 +380,70 @@ a {
     padding-left: 5px;
 }
 
+/* 뷰 제목영역 */
+.view_title_box {
+    background-color: #f0f0f0;
+}
+
+.view_title {
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.view_title .title {
+    font-weight: bold;
+}
+
+.view_title .left {
+    font-size: 14px;
+    float: left;
+    font-weight: bold;
+    color: #767676;
+}
+
+.view_title .right {
+    font-size: 14px;
+    color: #666;
+    width: 65%;
+    float: right;
+}
+
+.view_title .digit {
+    font-family: tahoma;
+}
+
+.view_title li {
+    padding-bottom: 10px;
+}
+
+/* 뷰 정보영역 */
+.food_info_box {
+    padding: 0 15px 0 15px;
+    background-color: #f0f0f0;
+}
+
+.food_info {
+    padding-bottom: 30px;
+}
+
+.food_info .title {
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.food_info .info {
+    font-size: 14px;
+    color: #666;
+    line-height: 23px;
+}
+
+.food_info a {
+    font-size: 14px;
+    color: #3b9a7b;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 /* 푸터영역 */
 .footer {
     background-color: #fff;
@@ -400,7 +464,7 @@ a {
 }
 
 .footer li:nth-child(n+2) {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 .footer .rights {
@@ -411,6 +475,7 @@ a {
 .footer .rights .highlight {
     font-weight: bold;
 }
+
 
 /* 320px 이상 && 768px미만 */
 
@@ -546,6 +611,24 @@ a {
     .main_notice {
         padding: 20px 15px 0 15px;
     }
+
+    .view_title {
+        padding-bottom: 5px;
+    }
+
+    /* 뷰 제목영역 */
+    .view_title_box {
+        padding: 30px 15px 20px 15px;
+    }
+
+    .view_title .title {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+
+    .view_title .category {
+        width: 320px;
+    }
 }
 
 /* 768px이상 && 1024 */
@@ -650,6 +733,29 @@ a {
     .main_notice .partners .title {
         float: left;
         margin-right: 20px;
+    }
+
+    /*  뷰 제목영역 */
+    .view_title_box {
+        padding: 30px 15px 30px 15px;
+    }
+
+    .view_title {
+        padding-bottom: 20px;
+    }
+
+    .view_title .category {
+        width: 685px;
+    }
+
+    .view_title li {
+        float: left;
+        width: 50%;
+    }
+
+    .view_title .title {
+        font-size: 36px;
+        padding-bottom: 20px;
     }
 }
 
@@ -808,5 +914,36 @@ a {
     .main_notice .partners .title {
         float: left;
         margin-right: 20px;
+    }
+
+    /* 뷰 제목영역 */
+    .view_title_box {
+        padding: 40px 0 30px 0;
+    }
+
+    .view_title {
+        width: 988px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .view_title .category {
+        width: 685px;
+    }
+
+    .view_title li {
+        float: left;
+        width: 50%;
+    }
+
+    .view_title .title {
+        font-size: 36px;
+        padding-bottom: 20px;
+    }
+
+    /* 뷰 정보영역 */
+    .food_info {
+        width: 988px;
+        margin: 0 auto;
     }
 }
