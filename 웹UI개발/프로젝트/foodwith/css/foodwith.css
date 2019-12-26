@@ -69,31 +69,16 @@ figure {
 
 .header_box .menu_box {
     float: right;
-    width: 50%;
     height: 100%;
 }
 
 .header_box .menu_box li {
-    float: right;
     font-size: 18px;
-    line-height: 70px;
 }
 
 .menu_box li a {
     display: block;
     padding: 0 20px 0 20px;
-}
-
-.header .header_menu {
-    position: absolute;
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: 50px;
-    display: none;
-    padding: 10px 0 10px 0;
-    height: 108px;
-    background: #fff;
 }
 
 /* 메인배너영역 */
@@ -116,12 +101,6 @@ figure {
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
-}
-
-.main_banner .info_box .underline {
-    border-bottom: 1px solid black;
-    width: 43px;
-    margin-top: 25px;
 }
 
 .main_banner .info_box .profile_box {
@@ -168,10 +147,23 @@ figure {
 }
 
 .main_list .img_box .image {
+    display: block;
     width: 100%;
     height: 100%;
+}
+
+.main_list .img_box .img_frame {
+    position: relative;
+}
+
+.main_list .img_box .img_frame::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     border: 1px solid rgba(0, 0, 0, 10%);
-    box-sizing: border-box;
 }
 
 .main_list .img_box {
@@ -180,7 +172,6 @@ figure {
 }
 
 .main_list .showmore_btn {
-    border-style: none;
     background-color: #fff;
     width: 100%;
     height: 60px;
@@ -556,25 +547,36 @@ figure {
     }
 
     .header .tab_box .tab {
-        background: url(../image/icon_menu.png)50% no-repeat;
+        background: url(../image/icon_menu.png) no-repeat;
         background-size: contain;
+        width: 100%;
         height: 100%;
+        border: none;
+        cursor: pointer;
     }
 
     .header_box .menu_box {
         display: none;
     }
 
-    .header_menu.active {
+    .header .tab_box.active+.menu_box {
         display: block;
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        top: 50px;
+        padding: 10px 0 10px 0;
+        height: 108px;
+        background: #fff;
     }
 
-    .header_menu li {
+    .header_box .menu_box li {
         height: 36px;
-        font-size: 18px;
+        line-height: 36px;
     }
 
-    .header_menu a {
+    .header_box .menu_box a {
         display: block;
         height: 100%;
     }
@@ -597,10 +599,6 @@ figure {
         padding: 0 35px 30px 35px;
     }
 
-    .main_banner .info_box .underline {
-        margin: 15px auto 0;
-    }
-
     .main_banner .info_box .title {
         font-size: 22px;
         line-height: 28px;
@@ -609,8 +607,18 @@ figure {
     }
 
     .main_banner .info_box .profile_box {
-        padding-top: 25px;
+        padding: 43px 0 27px 0;
         margin: 0 auto;
+        position: relative;
+    }
+
+    .main_banner .info_box .profile_box::after {
+        content: "";
+        width: 35px;
+        top: 17px;
+        left: 50px;
+        border-bottom: 1px solid #333;
+        position: absolute;
     }
 
     .main_banner .profile_box .profile_name {
@@ -699,6 +707,7 @@ figure {
     }
 
     .header_box .menu_box li {
+        float: right;
         line-height: 50px;
     }
 
@@ -726,7 +735,16 @@ figure {
     }
 
     .main_banner .info_box .profile_box {
-        padding-top: 35px;
+        position: relative;
+        padding-top: 70px;
+    }
+
+    .main_banner .info_box .profile_box::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #333;
+        width: 35px;
+        top: 30px;
     }
 
     .info_box .profile_box .profile_name {
@@ -826,6 +844,11 @@ figure {
         margin: 0 auto;
     }
 
+    .header_box .menu_box li {
+        float: right;
+        line-height: 70px;
+    }
+
     .header_box .menu_box li a:hover {
         font-weight: bold;
         font-size: 22px;
@@ -867,7 +890,16 @@ figure {
     }
 
     .main_banner .info_box .profile_box {
-        padding-top: 35px;
+        position: relative;
+        padding-top: 95px;
+    }
+
+    .main_banner .info_box .profile_box::after {
+        content: "";
+        position: absolute;
+        border-bottom: 1px solid #333;
+        width: 35px;
+        top: 44px;
     }
 
     .info_box .profile_box .profile_name {
