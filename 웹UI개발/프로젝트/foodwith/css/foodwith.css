@@ -477,19 +477,22 @@ figure {
 }
 
 .guide_table,
-.guide_table th {
+.guide_table thead th {
     border: 1px solid #c1c1c1;
 }
 
-.guide_table th {
+.guide_table thead th {
     text-align: left;
     padding: 10px;
     background-color: #eaeaea;
 }
 
-.guide_table td {
+.guide_table tbody th,
+td {
+    font-weight: normal;
     font-size: 14px;
     color: #666;
+    text-align: left;
     padding: 10px;
     border-left: 1px solid #c1c1c1;
     border-bottom: 1px solid #c1c1c1;
