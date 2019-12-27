@@ -50,6 +50,11 @@ figure {
     background-color: #fff;
 }
 
+.header_box {
+    max-width: 988px;
+    margin: 0 auto;
+}
+
 .header_box .logo_box {
     float: left;
     height: 50px;
@@ -89,10 +94,11 @@ figure {
 .main_banner {
     display: block;
     height: 100%;
+    max-width: 988px;
+    margin: 0 auto;
 }
 
 .banner_image_box img {
-    width: 100%;
     height: 100%;
 }
 
@@ -104,7 +110,7 @@ figure {
 }
 
 .main_banner .info_box .profile_box {
-    width: 150px;
+    display: inline-block;
 }
 
 .profile_box .profile {
@@ -118,17 +124,9 @@ figure {
     top: -6px;
 }
 
-.profile_box .profile::after {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: 50px;
-    background: url(../image/thumbnail_profile.jpg)no-repeat;
-    background-size: contain;
+.profile_box .profile img {
+    height: 100%;
+    border-radius: 50%;
 }
 
 .profile_box .profile_name {
@@ -143,6 +141,8 @@ figure {
 }
 
 .main_list {
+    max-width: 988px;
+    margin: 0 auto;
     padding: 20px 0 20px 0;
 }
 
@@ -193,6 +193,11 @@ figure {
     background-color: #f4f5f7;
 }
 
+.main_form {
+    max-width: 988px;
+    margin: 0 auto;
+}
+
 .main_form .title_box {
     padding-bottom: 20px;
     text-align: center;
@@ -223,7 +228,6 @@ figure {
     font-size: 14px;
     color: #333;
     padding-bottom: 8px;
-    width: 100%;
 }
 
 .main_form .form_box .nickname_input {
@@ -277,19 +281,19 @@ figure {
     border: 0 none;
     font-size: 14px;
     color: #333;
+    padding-left: 14px;
     -webkit-appearance: none;
+    background-color: #fff;
     margin-left: -15px;
     padding-bottom: 7px;
 }
 
 .email_box .select_form::before {
     position: absolute;
-    content: "";
-    width: 23px;
-    height: 11px;
-    top: 19px;
-    left: -21px;
-    background: #fff;
+    content: "@";
+    top: 2px;
+    font-size: 14px;
+    color: #333;
 }
 
 .email_box .select_form::after {
@@ -324,11 +328,17 @@ figure {
     font-size: 15px;
     color: #666;
     padding: 5px 10px 5px 10px;
+    cursor: pointer;
 }
 
 /* 매인공지사항영역 */
 .main_notice_box {
     background-color: #f0f0f0;
+}
+
+.main_notice {
+    max-width: 988px;
+    margin: 0 auto;
 }
 
 .main_notice .title {
@@ -341,35 +351,37 @@ figure {
     padding-bottom: 20px;
 }
 
-.main_notice .left,
-.main_notice .right {
+.main_notice .left_link,
+.main_notice .right_link {
     font-size: 14px;
 }
 
-.notice .left {
+.notice .left_link {
     float: left;
     width: 80%;
 }
 
-.notice .right {
+.notice .right_link {
     float: right;
 }
 
-.notice nav {
+.notice ul {
     padding-bottom: 20px;
     border-bottom: 1px solid #c1c1c1;
 }
 
-.creators .left,
-.partners .left {
+.creators .left_link,
+.partners .left_link {
     border-right: 1px solid #c1c1c1;
     padding-right: 10px;
     font-size: 14px;
+    float: left;
 }
 
-.creators .right,
-.partners .right {
-    padding-left: 5px;
+.creators .right_link,
+.partners .right_link {
+    padding-left: 10px;
+    float: left;
 }
 
 /* 뷰 제목영역 */
@@ -496,13 +508,17 @@ figure {
 /* 푸터영역 */
 .footer {
     background-color: #fff;
+}
+
+.footer_box {
     padding: 20px;
     text-align: center;
+    max-width: 988px;
+    margin: 0 auto;
 }
 
 .footer ul {
-    width: 290px;
-    margin: 0 auto;
+    display: inline-block;
     padding-bottom: 20px;
 }
 
@@ -519,6 +535,7 @@ figure {
 .footer .rights {
     font-size: 14px;
     color: #333;
+    display: block;
 }
 
 .footer .rights .highlight {
@@ -635,16 +652,12 @@ figure {
         margin: 0 15px 0 15px;
     }
 
-    .main_list .img_box .image_title_box h2 {
+    .main_list .img_box .image_title_box h3 {
         font-size: 14px;
     }
 
     .main_list .img_box .image_title_box {
         line-height: 40px;
-    }
-
-    .img_box .image_title_box h2 {
-        font-size: 14px;
     }
 
     .main_list .shower_btn_box {
@@ -666,6 +679,14 @@ figure {
 
     .main_form .form_box {
         padding: 0 25px 25px 25px;
+    }
+
+    .main_form .form_box input[type="text"] {
+        width: 86%;
+    }
+
+    .email_box .select_form::before {
+        left: -17px;
     }
 
     .main_form .send_box {
@@ -771,7 +792,7 @@ figure {
         margin-right: 34px;
     }
 
-    .main_list .img_box .image_title_box h2 {
+    .main_list .img_box .image_title_box h3 {
         font-size: 18px;
     }
 
@@ -794,6 +815,14 @@ figure {
 
     .main_form .title_box .title {
         font-size: 30px;
+    }
+
+    .main_form .form_box input[type="text"] {
+        width: 92%;
+    }
+
+    .email_box .select_form::before {
+        left: -19px;
     }
 
     .main_form .form_box {
@@ -840,8 +869,6 @@ figure {
     /* 헤더영역 */
     .header_box {
         height: 70px;
-        width: 988px;
-        margin: 0 auto;
     }
 
     .header_box .menu_box li {
@@ -860,10 +887,6 @@ figure {
     }
 
     /* 매인베너 영역 */
-    .main_banner {
-        width: 988px;
-        margin: 0 auto;
-    }
 
     .main_banner_box {
         height: 420px;
@@ -907,10 +930,6 @@ figure {
     }
 
     /* 매인리스트 영역 */
-    .main_list {
-        width: 988px;
-        margin: 0 auto;
-    }
 
     .img_list .list {
         width: 316px;
@@ -931,10 +950,9 @@ figure {
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: transparent;
     }
 
-    .main_list .img_box .image_title_box h2 {
+    .main_list .img_box .image_title_box h3 {
         font-size: 18px;
     }
 
@@ -962,8 +980,6 @@ figure {
     /* 매인 폼영역 */
     .main_form {
         padding: 60px 0 60px 0;
-        width: 988px;
-        margin: 0 auto;
         background: url(../image/bg_pencil.png)no-repeat;
         background-position: right 0 bottom 130px;
     }
@@ -989,14 +1005,16 @@ figure {
         padding: 50px 50px 40px 50px;
     }
 
-    .main_form .send_box {
-        cursor: pointer;
+    .main_form .form_box input[type="text"] {
+        width: 88%;
+    }
+
+    .email_box .select_form::before {
+        left: -23px;
     }
 
     /* 매인공지사항 영역 */
     .main_notice {
-        width: 988px;
-        margin: 0 auto;
         padding-top: 20px;
     }
 
