@@ -10,6 +10,9 @@ ul,
 ol,
 p,
 a,
+dl,
+dt,
+dd,
 figure {
     margin: 0;
     padding: 0;
@@ -390,6 +393,8 @@ figure {
 }
 
 .view_title {
+    max-width: 988px;
+    margin: 0 auto;
     border-bottom: 1px solid #c1c1c1;
 }
 
@@ -407,7 +412,6 @@ figure {
 .view_title .right {
     font-size: 14px;
     color: #666;
-    width: 65%;
     float: right;
 }
 
@@ -415,7 +419,7 @@ figure {
     font-family: tahoma;
 }
 
-.view_title li {
+.view_title .category_box {
     padding-bottom: 12px;
 }
 
@@ -427,6 +431,8 @@ figure {
 
 .food_info {
     padding-bottom: 30px;
+    max-width: 988px;
+    margin: 0 auto;
 }
 
 .food_info .title {
@@ -714,7 +720,11 @@ figure {
     }
 
     .view_title .category {
-        width: 320px;
+        width: 273px;
+    }
+
+    .view_title .right {
+        width: 63%;
     }
 }
 
@@ -853,7 +863,7 @@ figure {
         width: 685px;
     }
 
-    .view_title li {
+    .view_title .category_box {
         float: left;
         width: 50%;
     }
@@ -861,6 +871,10 @@ figure {
     .view_title .title {
         font-size: 36px;
         padding-bottom: 20px;
+    }
+
+    .view_title .right {
+        width: 66%;
     }
 }
 
@@ -1030,18 +1044,19 @@ figure {
     }
 
     .view_title {
-        width: 988px;
-        margin: 0 auto;
         padding-bottom: 20px;
     }
 
-    .view_title .category {
-        width: 685px;
+    .view_title .category_box {
+        width: 50%;
     }
 
-    .view_title li {
+    .view_title .category_box:nth-child(2n-1) {
         float: left;
-        width: 50%;
+    }
+
+    .view_title .category_box:nth-child(2n) {
+        float: right;
     }
 
     .view_title .title {
@@ -1049,9 +1064,12 @@ figure {
         padding-bottom: 20px;
     }
 
+    .view_title .right {
+        width: 75%;
+    }
+
     /* 뷰 정보영역 */
-    .food_info {
-        width: 988px;
-        margin: 0 auto;
+    .food_info_box {
+        padding: 0 0 10px 0;
     }
 }
