@@ -62,7 +62,7 @@ figure {
     float: left;
     height: 50px;
     width: 94px;
-    padding: 20px 20px 0 0px;
+    padding: 20px 20px 0 0;
 }
 
 .logo_box .logo {
@@ -86,7 +86,7 @@ figure {
 
 .menu_box li a {
     display: block;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 /* 메인배너영역 */
@@ -146,7 +146,7 @@ figure {
 .main_list {
     max-width: 988px;
     margin: 0 auto;
-    padding: 20px 0 20px 0;
+    padding: 20px 0;
 }
 
 .main_list .img_box .image {
@@ -166,7 +166,7 @@ figure {
     bottom: 0;
     left: 0;
     right: 0;
-    border: 1px solid rgba(0, 0, 0, 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .main_list .img_box {
@@ -175,6 +175,7 @@ figure {
 }
 
 .main_list .showmore_btn {
+    position: relative;
     background-color: #fff;
     width: 100%;
     height: 60px;
@@ -184,11 +185,18 @@ figure {
     cursor: pointer;
 }
 
-.main_list .showmore_btn .icon {
-    width: 16px;
-    height: 21px;
-    position: relative;
-    top: 3px;
+.main_list .showmore_btn::after {
+    content: "";
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    background: url(../image/icon_arrow_more.png)no-repeat;
+    background-size: contain;
+    left: 0;
+    right: 75px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /* 매인폼 영역 */
@@ -281,14 +289,13 @@ figure {
 .email_box .select_form select {
     width: 100%;
     height: 100%;
-    border: 0 none;
+    border: 0;
     font-size: 14px;
     color: #333;
-    padding-left: 14px;
+    padding: 0 0 7px 14px;
     -webkit-appearance: none;
     background-color: #fff;
     margin-left: -15px;
-    padding-bottom: 7px;
 }
 
 .email_box .select_form::before {
@@ -318,7 +325,7 @@ figure {
 .main_form .userTextarea textarea {
     width: 100%;
     resize: none;
-    border: 0 none;
+    border: 0;
     padding: 0;
 }
 
@@ -361,7 +368,7 @@ figure {
 
 .notice .left_link {
     float: left;
-    width: 80%;
+    width: calc(100% - 55px);
 }
 
 .notice .right_link {
@@ -488,7 +495,7 @@ figure {
 }
 
 .guide_table tbody th,
-td {
+.guide_table tbody td {
     font-weight: normal;
     font-size: 14px;
     color: #666;
@@ -592,7 +599,7 @@ td {
         left: 0;
         right: 0;
         top: 50px;
-        padding: 10px 0 10px 0;
+        padding: 10px 0;
         height: 108px;
         background: #fff;
     }
@@ -658,10 +665,10 @@ td {
     }
 
     .main_list .img_box {
-        margin: 0 15px 0 15px;
+        margin: 0 15px;
     }
 
-    .main_list .img_box .image_title_box h3 {
+    .main_list .img_box .image_title_box .text {
         font-size: 14px;
     }
 
@@ -670,7 +677,7 @@ td {
     }
 
     .main_list .shower_btn_box {
-        padding: 0 15px 0 15px;
+        padding: 0 15px;
     }
 
     /* 매인 폼영역 */
@@ -805,7 +812,7 @@ td {
         margin-right: 34px;
     }
 
-    .main_list .img_box .image_title_box h3 {
+    .main_list .img_box .image_title_box .text {
         font-size: 18px;
     }
 
@@ -814,7 +821,7 @@ td {
     }
 
     .main_list .shower_btn_box {
-        padding: 0 34px 0 34px;
+        padding: 0 34px;
     }
 
     /* 매인 폼영역 */
@@ -891,11 +898,11 @@ td {
     .header_box .menu_box li {
         float: right;
         line-height: 70px;
+        font-size: 22px;
     }
 
     .header_box .menu_box li a:hover {
         font-weight: bold;
-        font-size: 22px;
     }
 
     .logo_box .logo {
@@ -969,7 +976,7 @@ td {
         bottom: 0;
     }
 
-    .main_list .img_box .image_title_box h3 {
+    .main_list .img_box .image_title_box .text {
         font-size: 18px;
     }
 
@@ -996,7 +1003,7 @@ td {
 
     /* 매인 폼영역 */
     .main_form {
-        padding: 60px 0 60px 0;
+        padding: 60px 0;
         background: url(../image/bg_pencil.png)no-repeat;
         background-position: right 0 bottom 130px;
     }
@@ -1073,6 +1080,6 @@ td {
 
     /* 뷰 정보영역 */
     .food_info_box {
-        padding: 0 0 10px 0;
+        padding-bottom: 10px;
     }
 }

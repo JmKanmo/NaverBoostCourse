@@ -20,6 +20,9 @@
                     </div>
                 </a>
 
+                <!-- 메뉴(About, Work, Contact)의 활성화를 확인하려면
+                아래 div태그에 active클래스를 추가로 넣어주시기 바랍니다! -->
+
                 <div class="tab_box">
                     <button type="button" class="tab">
                         <span class="blind">탭버튼</span>
@@ -51,7 +54,7 @@
                         <div class="profile">
                             <img src="./image/thumbnail_profile.jpg" alt="프로필이미지">
                         </div>
-                        <h3 class="profile_name">FULLMOON</h3>
+                        <p class="profile_name">FULLMOON</p>
                     </div>
                 </div>
             </a>
@@ -62,57 +65,57 @@
                 <ul class="img_list clear_fix">
                     <li class="list">
                         <a href="" class="img_box">
-                            <div class="img_frame"><img src="./image/thumbnail_pumpkin.jpg" alt="호박" class="image">
+                            <div class="img_frame"><img src="./image/thumbnail_pumpkin.jpg" alt="" class="image">
                             </div>
                             <div class="image_title_box">
-                                <h3 class="shortening">따뜻 담백 호박! 든든한 호박죽으로 한끼 해결에 도전하세요!</h3>
+                                <p class="shortening text">따뜻 담백 호박! 든든한 호박죽으로 한끼 해결에 도전하세요!</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="list">
                         <a href="" class="img_box">
-                            <div class="img_frame"><img src="./image/thumbnail_lime.jpg" alt="라임" class="image"></div>
+                            <div class="img_frame"><img src="./image/thumbnail_lime.jpg" alt="" class="image"></div>
                             <div class="image_title_box">
-                                <h3 class="shortening">상큼한 라임청 담기</h3>
+                                <p class="shortening text">상큼한 라임청 담기</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="list">
                         <a href="" class="img_box">
-                            <div class="img_frame"><img src="./image/thumbnail_paprika.jpg" alt="피망" class="image">
+                            <div class="img_frame"><img src="./image/thumbnail_paprika.jpg" alt="" class="image">
                             </div>
                             <div class="image_title_box">
-                                <h3 class="shortening">아삭아삭 빨간 피망 볶음 레시피</h3>
+                                <p class="shortening text">아삭아삭 빨간 피망 볶음 레시피</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="list">
                         <a href="" class="img_box">
-                            <div class="img_frame"><img src="./image/thumbnail_garlic.jpg" alt="마늘" class="image"></div>
+                            <div class="img_frame"><img src="./image/thumbnail_garlic.jpg" alt="" class="image"></div>
                             <div class="image_title_box">
-                                <h3 class="shortening">바삭바삭 마늘빵 만들기</h3>
+                                <p class="shortening text">바삭바삭 마늘빵 만들기</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="list">
                         <a href="" class="img_box">
-                            <div class="img_frame"><img src="./image/thumbnail_onion.jpg" alt="양파" class="image"></div>
+                            <div class="img_frame"><img src="./image/thumbnail_onion.jpg" alt="" class="image"></div>
                             <div class="image_title_box">
-                                <h3 class="shortening">자색 빛깔 적양파 피클 담기</h3>
+                                <p class="shortening text">자색 빛깔 적양파 피클 담기</p>
                             </div>
                         </a>
                     </li>
 
                     <li class="list">
                         <a href="" class="img_box">
-                            <div class="img_frame"><img src="./image/thumbnail_avocado.jpg" alt="아보카도" class="image">
+                            <div class="img_frame"><img src="./image/thumbnail_avocado.jpg" alt="" class="image">
                             </div>
                             <div class="image_title_box">
-                                <h3 class="shortening">건강한 아보카도 샌드위치 만들기</h3>
+                                <p class="shortening text">건강한 아보카도 샌드위치 만들기</p>
                             </div>
                         </a>
                     </li>
@@ -120,7 +123,6 @@
 
                 <div class="shower_btn_box">
                     <button type="button" class="showmore_btn">
-                        <img src="./image/icon_arrow_more.png" alt="더보기" class="icon">
                         <span>더보기</span>
                     </button>
                 </div>
@@ -135,28 +137,34 @@
                     <h3 class="subtitle">답변을 원하시면 이메일을 꼭 적어주세요.</h3>
                 </div>
 
-                <form action="./main.html" class="form_box">
-                    <label for="nickname">닉네임</label>
-                    <input type="text" id="nickname" placeholder="NICKNAME">
+                <form action="./main.html">
+                    <div class="form_box">
+                        <label for="nickname">닉네임</label>
+                        <input type="text" id="nickname" placeholder="NICKNAME">
 
-                    <label for="email">이메일</label>
-                    <div class="email_box clear_fix">
-                        <div class="id_form">
-                            <input type="text" id="email" placeholder="ID" class="id_form">
+                        <label for="email">이메일</label>
+                        <label for="domain" class="blind">도메인</label>
+
+                        <div class="email_box clear_fix">
+                            <div class="id_form">
+                                <input type="text" id="email" placeholder="ID" class="id_form">
+                            </div>
+                            <div class="select_form">
+                                <select id="domain" name="address">
+                                    <option value="">선택하세요</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="select_form">
-                            <select name="address">
-                                <option value="">선택하세요</option>
-                            </select>
+
+                        <label for="textArea" class="blind">텍스트</label>
+
+                        <div class="userTextarea">
+                            <textarea title="텍스트박스" id="textArea" name="name" cols="8" rows="10"
+                                placeholder="전하고 싶은 말을 100자 이내로 적어주세요."></textarea>
                         </div>
-                    </div>
 
-                    <div class="userTextarea">
-                        <textarea title="텍스트박스" name="name" cols="8" rows="10"
-                            placeholder="전하고 싶은 말을 100자 이내로 적어주세요."></textarea>
+                        <button type="button" class="send_box">전송하기</button>
                     </div>
-
-                    <button type="button" class="send_box">전송하기</button>
                 </form>
             </div>
         </div>
@@ -173,7 +181,7 @@
                 </div>
 
                 <div class="creators clear_fix">
-                    <h3 class="title">Creators</h3>
+                    <h2 class="title">Creators</h2>
                     <ul class="clear_fix">
                         <li class="left_link shortening"><a href="">푸드 크리에이터</a></li>
                         <li class="right_link"><a href="">푸드 비즈니스</a></li>
@@ -181,7 +189,7 @@
                 </div>
 
                 <div class="partners clear_fix">
-                    <h3 class="title">Partners</h3>
+                    <h2 class="title">Partners</h2>
                     <ul class="clear_fix">
                         <li class="left_link shortening"><a href="">푸드 파트너</a></li>
                         <li class="right_link"><a href="">푸드 스토어</a></li>
