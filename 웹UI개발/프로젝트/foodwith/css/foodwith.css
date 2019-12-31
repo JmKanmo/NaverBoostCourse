@@ -128,7 +128,6 @@ figure {
 }
 
 .profile_box .profile img {
-    height: 100%;
     border-radius: 50%;
 }
 
@@ -230,7 +229,7 @@ figure {
     font-weight: bold;
     font-size: 16px;
     color: #333;
-    padding: 25px 0 15px 0;
+    padding: 25px 0 15px;
 }
 
 .main_form .form_box input[type="text"] {
@@ -319,7 +318,7 @@ figure {
 
 .main_form .userTextarea {
     border: 1px solid #c1c1c1;
-    padding: 10px 10px 0 10px;
+    padding: 10px 10px 0;
 }
 
 .main_form .userTextarea textarea {
@@ -337,7 +336,7 @@ figure {
     background-color: #e9e9e9;
     font-size: 15px;
     color: #666;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px;
     cursor: pointer;
 }
 
@@ -432,7 +431,7 @@ figure {
 
 /* 뷰 정보영역 */
 .food_info_box {
-    padding: 0 15px 10px 15px;
+    padding: 0 15px 10px;
     background-color: #f0f0f0;
 }
 
@@ -518,7 +517,7 @@ figure {
     text-align: center;
     font-size: 14px;
     color: #666;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 30px;
 }
 
 /* 푸터영역 */
@@ -629,7 +628,7 @@ figure {
     }
 
     .main_banner .info_box {
-        padding: 0 35px 30px 35px;
+        padding: 0 35px 30px;
     }
 
     .main_banner .info_box .title {
@@ -640,7 +639,7 @@ figure {
     }
 
     .main_banner .info_box .profile_box {
-        padding: 43px 0 27px 0;
+        padding: 43px 0 27px;
         margin: 0 auto;
         position: relative;
     }
@@ -682,7 +681,7 @@ figure {
 
     /* 매인 폼영역 */
     .main_form {
-        padding: 30px 15px 25px 15px;
+        padding: 30px 15px 25px;
     }
 
     .main_form .title_box .subtitle {
@@ -694,7 +693,7 @@ figure {
     }
 
     .main_form .form_box {
-        padding: 0 25px 25px 25px;
+        padding: 0 25px 25px;
     }
 
     .main_form .form_box input[type="text"] {
@@ -712,7 +711,7 @@ figure {
 
     /* 매인공지사항 영역 */
     .main_notice {
-        padding: 20px 15px 0 15px;
+        padding: 20px 15px 0;
     }
 
     .view_title {
@@ -721,7 +720,7 @@ figure {
 
     /* 뷰 제목영역 */
     .view_title_box {
-        padding: 30px 15px 20px 15px;
+        padding: 30px 15px 20px;
     }
 
     .view_title .title {
@@ -826,7 +825,7 @@ figure {
 
     /* 매인 폼영역 */
     .main_form {
-        padding: 30px 34px 30px 34px;
+        padding: 30px 34px;
     }
 
     .main_form .title_box .subtitle {
@@ -846,12 +845,12 @@ figure {
     }
 
     .main_form .form_box {
-        padding: 0 50px 50px 50px;
+        padding: 0 50px 50px;
     }
 
     /* 매인공지사항 영역 */
     .main_notice {
-        padding: 20px 34px 0 34px;
+        padding: 20px 34px 0;
     }
 
     .main_notice .creators .title,
@@ -862,7 +861,7 @@ figure {
 
     /*  뷰 제목영역 */
     .view_title_box {
-        padding: 30px 15px 30px 15px;
+        padding: 30px 15px;
     }
 
     .view_title {
@@ -1026,7 +1025,7 @@ figure {
         float: right;
         width: 590px;
         background-color: rgba(255, 255, 255, 0.9);
-        padding: 50px 50px 40px 50px;
+        padding: 50px 50px 40px;
     }
 
     .main_form .form_box input[type="text"] {
@@ -1050,7 +1049,7 @@ figure {
 
     /* 뷰 제목영역 */
     .view_title_box {
-        padding: 40px 0 30px 0;
+        padding: 40px 0 30px;
     }
 
     .view_title {
