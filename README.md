@@ -21,13 +21,13 @@
 
 [과정수료]: http://www.edwith.org/certificate/A20191231-601133?langCode=ko
 
-[포트폴리오 웹페이지]: https://jmkanmo.github.io/edwith_BoostCourse/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/portfolio/portfolio
+[포트폴리오 웹페이지]: https://jmkanmo.github.io/BoostCourse_Web-UI/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/portfolio/portfolio
 
 
-[프로모션 웹페이지]: https://jmkanmo.github.io/edwith_BoostCourse/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/promotion/promotion
+[프로모션 웹페이지]: https://jmkanmo.github.io/BoostCourse_Web-UI/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/promotion/promotion
 
 
-[푸드위드 웹페이지 메인]: https://jmkanmo.github.io/edwith_BoostCourse/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/foodwith/main
+[푸드위드 웹페이지 메인]: https://jmkanmo.github.io/BoostCourse_Web-UI/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/foodwith/main
 
 
-[푸드위드 웹페이지 뷰]: https://jmkanmo.github.io/edwith_BoostCourse/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/foodwith/view
+[푸드위드 웹페이지 뷰]: https://jmkanmo.github.io/BoostCourse_Web-UI/%EC%9B%B9UI%EA%B0%9C%EB%B0%9C/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/foodwith/view
