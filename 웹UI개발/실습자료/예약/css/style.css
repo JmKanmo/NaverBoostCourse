@@ -5,7 +5,8 @@
     font-style: normal
 }
 
-.fn,.fn:before {
+.fn,
+.fn:before {
     line-height: 1em
 }
 
@@ -93,11 +94,11 @@
 }
 
 .fn-write2:before {
-	content: "\EADB"
+    content: "\EADB"
 }
 
 .fn-image1:before {
-	content: "\EA4C"
+    content: "\EA4C"
 }
 
 @font-face {
@@ -114,15 +115,29 @@
     src: url('../font/NanumGothicBold.woff') format('woff')
 }
 
-@charset "utf-8";body,html {
+@charset "utf-8";
+
+body,
+html {
     min-height: 100%
 }
 
-body,button,form,h1,h2,h3,h4,input,li,p,ul {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+body,
+button,
+form,
+h1,
+h2,
+h3,
+h4,
+input,
+li,
+p,
+ul {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
-a,body {
+a,
+body {
     color: #000
 }
 
@@ -133,7 +148,7 @@ body {
 
 .sr_only {
     padding: 0;
-    clip: rect(0,0,0,0)
+    clip: rect(0, 0, 0, 0)
 }
 
 .img_border {
@@ -141,7 +156,8 @@ body {
     -webkit-box-sizing: border-box
 }
 
-.img_border,.img_btm_border {
+.img_border,
+.img_btm_border {
     opacity: .1;
     filter: alpha(opacity=10);
     moz-box-sizing: border-box
@@ -151,7 +167,19 @@ body {
     max-width: 414px
 }
 
-.bottom_common_path:after,.clearfix:after,.detail_area,.form_horizontal .inline_form:after,.group_btn_goto:after,.header:after,.pop_bottom_btnarea:after,.section_booking_agreement .agreement,.section_booking_agreement .agreement:after,.section_booking_ticket .ticket_body .qty:after,.section_info_tab .info_tab_lst:after,.section_my .my_summary .summary_board:after,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after {
+.bottom_common_path:after,
+.clearfix:after,
+.detail_area,
+.form_horizontal .inline_form:after,
+.group_btn_goto:after,
+.header:after,
+.pop_bottom_btnarea:after,
+.section_booking_agreement .agreement,
+.section_booking_agreement .agreement:after,
+.section_booking_ticket .ticket_body .qty:after,
+.section_info_tab .info_tab_lst:after,
+.section_my .my_summary .summary_board:after,
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after {
     clear: both
 }
 
@@ -163,7 +191,7 @@ html {
 
 body {
     overflow-x: auto;
-    margin: 0 auto!important;
+    margin: 0 auto !important;
     background-color: #e9ecef;
     word-wrap: break-word;
     word-break: break-word
@@ -174,13 +202,25 @@ body {
     text-overflow: ellipsis
 }
 
-body,button,form,h1,h2,h3,h4,input,li,p,ul {
+body,
+button,
+form,
+h1,
+h2,
+h3,
+h4,
+input,
+li,
+p,
+ul {
     margin: 0;
     padding: 0;
     -webkit-text-size-adjust: none
 }
 
-body,button,input {
+body,
+button,
+input {
     font-size: 16px;
     line-height: 24px
 }
@@ -198,7 +238,8 @@ img {
     border: 0
 }
 
-button,label {
+button,
+label {
     cursor: pointer
 }
 
@@ -231,19 +272,25 @@ hr {
     border-top: 6px solid #e9ecef
 }
 
-.blind,.sr_only {
+.blind,
+.sr_only {
     width: 1px;
     height: 1px;
     overflow: hidden
 }
 
-.img_bg_gra,.img_border,.img_btm_border {
+.img_bg_gra,
+.img_border,
+.img_btm_border {
     z-index: 10;
     bottom: 0;
     right: 0
 }
 
-.blind,.img_bg_gra,.img_border,.img_btm_border {
+.blind,
+.img_bg_gra,
+.img_border,
+.img_btm_border {
     position: absolute;
     top: 0;
     left: 0
@@ -259,23 +306,24 @@ hr {
     visibility: hidden
 }
 
-.clearfix:after,.clearfix:before {
+.clearfix:after,
+.clearfix:before {
     content: " ";
     display: table
 }
 
 .open {
-    display: block!important;
+    display: block !important;
 }
 
 .hide {
-    display: none!important;
-    height: 0!important
+    display: none !important;
+    height: 0 !important
 }
 
 .ct [class^=section_] .out_tit {
     display: block;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .img_border {
@@ -292,27 +340,28 @@ hr {
 }
 
 .img_bg_gra {
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -webkit-gradient(left top,left bottom,color-stop(0,#fff),color-stop(100%,rgba(0,0,0,.5)));
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #fff), color-stop(100%, rgba(0, 0, 0, .5)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    zoom:1}
+    zoom: 1
+}
 
 .no_topline {
-    border-top: none!important
+    border-top: none !important
 }
 
 .green {
-    color: #0aba16!important
+    color: #0aba16 !important
 }
 
 .pink {
-    color: #F82222!important
+    color: #F82222 !important
 }
 
 .ct [class^=section_] {
@@ -340,7 +389,7 @@ hr {
 }
 
 .in_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600
 }
 
@@ -356,11 +405,11 @@ hr {
 
 .agreement_nessasary {
     font-weight: 400;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .dsc {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-size: 16px;
     line-height: 24px
 }
@@ -377,7 +426,8 @@ hr {
     margin-right: 5px
 }
 
-.spr_bi,.spr_book2 {
+.spr_bi,
+.spr_book2 {
     font-size: 0;
     display: inline-block;
     vertical-align: top;
@@ -385,7 +435,9 @@ hr {
     white-space: nowrap
 }
 
-.spr_bi,.spr_book,.spr_book2 {
+.spr_bi,
+.spr_book,
+.spr_book2 {
     color: transparent;
     overflow: hidden
 }
@@ -430,25 +482,25 @@ hr {
 }
 
 .spr_book.icon_pholar {
-  width: 18px;
-  height: 18px;
-  top: 2px;
-  left: 3px;
-  background-position: -378px -235px;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left: 3px;
+    background-position: -378px -235px;
 }
 
 .spr_book.ico_arr18 {
-  width: 6px;
-  height: 10px;
-  top: -3px;
-  left: 2px;
-  background-position: -378px -255px;
+    width: 6px;
+    height: 10px;
+    top: -3px;
+    left: 2px;
+    background-position: -378px -255px;
 }
 
 .spr_book.ico_del {
-  width: 17px;
-  height: 17px;
-  background-position: -160px -33px;
+    width: 17px;
+    height: 17px;
+    background-position: -160px -33px;
 }
 
 .spr_book2 {
@@ -533,25 +585,29 @@ hr {
     height: 40px;
     background-position: -287px -196px
 }
+
 .spr_book2.ico_cls {
-	width: 16px;
-	height: 16px;
-	background-position:-281px -26px;
+    width: 16px;
+    height: 16px;
+    background-position: -281px -26px;
 }
 
 .spr_book2.ico_arr6_lt {
     width: 11px;
-	height: 20px;
-    background-position:-151px -50px;
+    height: 20px;
+    background-position: -151px -50px;
 }
+
 .spr_book2.ico_arr6_rt {
-	width: 11px;
-	height: 20px;
-    background-position:-164px -50px;
+    width: 11px;
+    height: 20px;
+    background-position: -164px -50px;
 }
+
 .spr_book2.ico_arr6_lt.off {
-	opacity: 0.6;
+    opacity: 0.6;
 }
+
 .spr_bi {
     background-image: url(../img/spr_bi.png);
     background-size: 130px 120px
@@ -577,7 +633,8 @@ input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0 1000px #fff inset
 }
 
-input:checked[type=checkbox],input[type=checkbox] {
+input:checked[type=checkbox],
+input[type=checkbox] {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     -ms-appearance: none;
@@ -614,8 +671,8 @@ input[type=checkbox].chk_agree+.label:before {
 
 input[type=checkbox].chk_agree+.label:before {
     margin-right: 10px;
-    width: 26px!important;
-    height: 26px!important;
+    width: 26px !important;
+    height: 26px !important;
     background-position: -47px -273px;
     vertical-align: -8.5px
 }
@@ -625,7 +682,9 @@ input[type=checkbox].chk_agree:checked+.label:before {
     background-color: transparent
 }
 
-input[type=text],input[type=email],input[type=tel] {
+input[type=text],
+input[type=email],
+input[type=tel] {
     -webkit-appearance: none;
     -ms-appearance: none;
     appearance: none;
@@ -644,8 +703,9 @@ button {
     border-radius: 0
 }
 
-.bk_more .bk_more_txt,.btn_review_more {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+.bk_more .bk_more_txt,
+.btn_review_more {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .bk_more {
@@ -669,7 +729,8 @@ button {
     color: #333
 }
 
-.bk_more .fn-down2,.bk_more .fn-up2 {
+.bk_more .fn-down2,
+.bk_more .fn-up2 {
     vertical-align: -5px;
     font-size: 20px;
     color: #8f8f8f
@@ -699,7 +760,7 @@ button {
 }
 
 .bk_btn {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .btn_review_more .fn-forward1 {
@@ -708,13 +769,13 @@ button {
 }
 
 .section_btn {
-    border-bottom: none!important
+    border-bottom: none !important
 }
 
 .bk_btn {
     display: block;
     width: 100%;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     background-color: #0aba16;
     cursor: pointer;
     font-size: 17px;
@@ -750,12 +811,12 @@ button {
 
 .top_title {
     width: 100%;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     max-width: 414px
 }
 
 .top_title .title {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .header {
@@ -764,11 +825,12 @@ button {
     top: 0;
     width: 100%;
     max-width: 414px;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
 }
 
-.header:after,.header:before {
+.header:after,
+.header:before {
     content: " ";
     display: table
 }
@@ -789,7 +851,8 @@ button {
     background-color: #0aba16
 }
 
-.btn_my,.logo {
+.btn_my,
+.logo {
     position: absolute;
     height: 48px
 }
@@ -810,7 +873,8 @@ button {
     padding: 11px 15px 12px 0
 }
 
-.btn_my,.top_title {
+.btn_my,
+.top_title {
     -webkit-box-sizing: border-box;
     top: 0;
     moz-box-sizing: border-box
@@ -835,8 +899,8 @@ button {
     -webkit-background-clip: padding;
     background-clip: padding-box;
     box-sizing: border-box;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0)
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
 }
 
 .top_title .btn_back {
@@ -909,7 +973,7 @@ button {
     background: #e9ecef;
     font: 0/0 a;
     word-wrap: break-word;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .footer .dsc_footer {
@@ -935,7 +999,7 @@ button {
 }
 
 .pop_bottom_btnarea .btn_bottom {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .img_bg:after {
@@ -951,12 +1015,14 @@ button {
     border-top: 1px solid #dddedf
 }
 
-.pop_bottom_btnarea:after,.pop_bottom_btnarea:before {
+.pop_bottom_btnarea:after,
+.pop_bottom_btnarea:before {
     content: " ";
     display: table
 }
 
-.img_bg:after,.img_bg:before {
+.img_bg:after,
+.img_bg:before {
     content: ''
 }
 
@@ -978,12 +1044,14 @@ button {
     filter: alpha(opacity=50)
 }
 
-.pagination .num.off,.preview_txt .preview_txt_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.pagination .num.off,
+.preview_txt .preview_txt_tit {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 500
 }
 
-.pop_bottom_btnarea .btn_gray,.pop_bottom_btnarea .btn_green {
+.pop_bottom_btnarea .btn_gray,
+.pop_bottom_btnarea .btn_green {
     float: left;
     width: 50%
 }
@@ -1005,11 +1073,11 @@ button {
 }
 
 .dimm_dark {
-    position: fixed!important;
-    top: 0!important;
-    bottom: 0!important;
-    left: 0!important;
-    right: 0!important;
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
     height: 100%
 }
 
@@ -1018,7 +1086,9 @@ button {
     min-width: 410px
 }
 
-.img_bg,.img_bg:after,.img_bg:before {
+.img_bg,
+.img_bg:after,
+.img_bg:before {
     top: 0;
     bottom: 0;
     position: absolute;
@@ -1032,20 +1102,21 @@ button {
 
 .img_bg {
     left: 0;
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -webkit-gradient(left top,left bottom,color-stop(0,#fff),color-stop(100%,rgba(0,0,0,.5)));
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 100%);
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #fff), color-stop(100%, rgba(0, 0, 0, .5)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    zoom:1}
+    zoom: 1
+}
 
 .img_bg:before {
     left: 0;
-    background-color: rgba(0,0,0,.3)
+    background-color: rgba(0, 0, 0, .3)
 }
 
 .img_bg:after {
@@ -1113,7 +1184,7 @@ button {
     font-size: 24px;
     line-height: 26px;
     color: #fff;
-    text-shadow: 0 0 1px rgba(0,0,0,.2)
+    text-shadow: 0 0 1px rgba(0, 0, 0, .2)
 }
 
 .preview_txt_dsc {
@@ -1121,45 +1192,50 @@ button {
     font-size: 16px;
     line-height: 24px;
     color: #f1d84d;
-    text-shadow: 0 0 1px rgba(0,0,0,.2)
+    text-shadow: 0 0 1px rgba(0, 0, 0, .2)
 }
 
 .item_preview_thumbs {
-  overflow-y: hidden;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  word-wrap: normal;
-  position: relative;
-  display: block;
-  padding-top: 17px;
-  width: 100%;
-  box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    word-wrap: normal;
+    position: relative;
+    display: block;
+    padding-top: 17px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
 .item_preview_thumbs .lst_thumb {
-  position: relative;
-  font: 0px/0 a;
-  white-space: nowrap;
+    position: relative;
+    font: 0px/0 a;
+    white-space: nowrap;
 }
+
 .item_preview_thumbs .lst_thumb .item {
-  overflow: hidden;
-  position: relative;
-  display: inline-block;
-  margin-right: 5px;
-  width: auto;
-  height: 80px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    width: auto;
+    height: 80px;
 }
+
 .item_preview_thumbs .lst_thumb .item .anchor {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
+
 .item_preview_thumbs .lst_thumb .item .item_thumb {
-  width: auto;
-  height: 80px;
+    width: auto;
+    height: 80px;
 }
+
 .item_preview_thumbs .lst_thumb .item:last-child {
-  margin-right: 15px;
+    margin-right: 15px;
 }
 
 .form_horizontal {
@@ -1172,7 +1248,8 @@ button {
     padding-left: 95px
 }
 
-.form_horizontal .inline_form:after,.form_horizontal .inline_form:before {
+.form_horizontal .inline_form:after,
+.form_horizontal .inline_form:before {
     content: " ";
     display: table
 }
@@ -1195,7 +1272,7 @@ button {
     width: 65px;
     color: #666;
     font-size: 16px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 500;
     line-height: 15px
 }
@@ -1212,7 +1289,9 @@ button {
     float: left
 }
 
-.form_horizontal .inline_form .inline_control input[type=text],.form_horizontal .inline_form .inline_control input[type=email],.form_horizontal .inline_form .inline_control input[type=tel] {
+.form_horizontal .inline_form .inline_control input[type=text],
+.form_horizontal .inline_form .inline_control input[type=email],
+.form_horizontal .inline_form .inline_control input[type=tel] {
     width: 100%;
     height: 30px;
     background-color: #fff;
@@ -1240,7 +1319,7 @@ button {
 .form_horizontal .inline_form .inline_control.tel_wrap {
     position: relative;
 }
-    
+
 
 .form_horizontal .inline_form .inline_control.tel_wrap .warning_msg {
     position: relative;
@@ -1291,7 +1370,8 @@ button {
     vertical-align: top
 }
 
-.group_visual .visual_img .item .img_bg:before,.group_visual .visual_img .item .visual_txt {
+.group_visual .visual_img .item .img_bg:before,
+.group_visual .visual_img .item .visual_txt {
     position: absolute;
     bottom: 0;
     top: 0;
@@ -1300,20 +1380,21 @@ button {
 }
 
 .group_visual .visual_img .item .img_bg {
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: -webkit-gradient(left top,left bottom,color-stop(0,#fff),color-stop(100%,rgba(0,0,0,.3)));
-    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: -o-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: -ms-linear-gradient(top,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
-    background: linear-gradient(to bottom,rgba(255,255,255,0) 0,rgba(0,0,0,.3) 100%);
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .3) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0, #fff), color-stop(100%, rgba(0, 0, 0, .3)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .3) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .3) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .3) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgba(0, 0, 0, .3) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#00ffffff', endColorstr='#a6000000');
-    zoom:1}
+    zoom: 1
+}
 
 .group_visual .visual_img .item .img_bg:before {
     content: '';
-    background-color: rgba(0,0,0,.2)
+    background-color: rgba(0, 0, 0, .2)
 }
 
 .group_visual .visual_img .item .visual_txt:before {
@@ -1345,9 +1426,9 @@ button {
     margin-bottom: 4px;
     padding-left: 32px;
     padding-right: 32px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
-    text-shadow: 0 0 1px rgba(0,0,0,.2);
+    text-shadow: 0 0 1px rgba(0, 0, 0, .2);
     font-size: 35px;
     line-height: 40px;
     letter-spacing: -.5px;
@@ -1362,7 +1443,7 @@ button {
 
 @media screen and (max-width: 320px) {
     .group_visual .visual_img .item .visual_txt .visual_txt_tit {
-        margin-bottom:6px;
+        margin-bottom: 6px;
         padding-left: 40px;
         padding-right: 40px;
         font-size: 24px;
@@ -1376,7 +1457,7 @@ button {
     padding-right: 34px;
     font-size: 18px;
     line-height: 26px;
-    text-shadow: 0 0 2px rgba(0,0,0,.2);
+    text-shadow: 0 0 2px rgba(0, 0, 0, .2);
     display: block;
     display: -webkit-box;
     overflow: hidden;
@@ -1388,14 +1469,15 @@ button {
 
 @media screen and (max-width: 320px) {
     .group_visual .visual_img .item .visual_txt .visual_txt_dsc {
-        padding-left:44px;
+        padding-left: 44px;
         padding-right: 44px;
         font-size: 15px;
         line-height: 21px
     }
 }
 
-.group_visual .nxt:before,.group_visual .prev:before {
+.group_visual .nxt:before,
+.group_visual .prev:before {
     margin-left: -1px;
     vertical-align: middle;
     display: inline-block;
@@ -1469,7 +1551,8 @@ button {
     box-sizing: border-box
 }
 
-.bottom_common_path:after,.bottom_common_path:before {
+.bottom_common_path:after,
+.bottom_common_path:before {
     content: " ";
     display: table
 }
@@ -1505,7 +1588,8 @@ button {
     background: 0 0
 }
 
-.bottom_common_path.column3 a[class*=btn_]:before,.bottom_common_path.column4 a[class*=btn_]:before {
+.bottom_common_path.column3 a[class*=btn_]:before,
+.bottom_common_path.column4 a[class*=btn_]:before {
     top: 23px
 }
 
@@ -1513,7 +1597,7 @@ button {
     margin-right: 2px;
     width: 16.5px;
     height: 18px;
-    vertical-align: -4px!important;
+    vertical-align: -4px !important;
     font-size: 18px;
     color: #666
 }
@@ -1576,7 +1660,8 @@ button {
     margin-bottom: 15px
 }
 
-.group_btn_goto:after,.group_btn_goto:before {
+.group_btn_goto:after,
+.group_btn_goto:before {
     content: " ";
     display: table
 }
@@ -1586,15 +1671,17 @@ button {
     color: #fff
 }
 
-.group_btn_goto .btn_goto_home,.group_btn_goto .btn_goto_tel,.group_btn_goto .btn_goto_mail {
+.group_btn_goto .btn_goto_home,
+.group_btn_goto .btn_goto_tel,
+.group_btn_goto .btn_goto_mail {
     display: inline-block;
     float: left;
     margin-right: 5px;
     padding: 8px;
     width: 22px;
     height: 22px;
-    border: 1px solid rgba(255,255,255,.8);
-    background-color: rgba(0,0,0,.4);
+    border: 1px solid rgba(255, 255, 255, .8);
+    background-color: rgba(0, 0, 0, .4);
     text-align: center
 }
 
@@ -1612,7 +1699,7 @@ button {
     font-size: 17px;
     line-height: 15px;
     vertical-align: 5px;
-    box-shadow: 0 0 2px rgba(0,0,0,.2);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
     content: '';
     opacity: .4;
     filter: alpha(opacity=40)
@@ -1654,8 +1741,9 @@ button {
     overflow: hidden
 }
 
-.count_control .count_control_input,.section_event .event_info_box .event_info_tit .in_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+.count_control .count_control_input,
+.section_event .event_info_box .event_info_tit .in_tit {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .count_control {
@@ -1746,13 +1834,14 @@ button {
 }
 
 .section_event .event_info_box .event_info .in_dsc {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     color: #333;
     font-size: 16px;
     line-height: 24px
 }
 
-.section_booking_form,.store_info {
+.section_booking_form,
+.store_info {
     background-color: #fff
 }
 
@@ -1762,8 +1851,9 @@ button {
     font: 0/0 a
 }
 
-.store_info .lst_store_info .item_lt,.store_name {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+.store_info .lst_store_info .item_lt,
+.store_name {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .store_location .store_map {
@@ -1782,7 +1872,7 @@ button {
 .box_store_info {
     padding: 20px;
     border-top: 1px solid #e2e5e8;
-    border-bottom: none!important
+    border-bottom: none !important
 }
 
 .store_name {
@@ -1883,13 +1973,13 @@ button {
 }
 
 .section_booking_agreement .agreement {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .section_booking_form {
     position: relative;
-    border-top: none!important;
-    border-bottom: 1px solid #ededed!important
+    border-top: none !important;
+    border-bottom: 1px solid #ededed !important
 }
 
 .section_booking_form .agreement_nessasary.help_txt {
@@ -1913,13 +2003,13 @@ button {
 }
 
 .section_booking_form .booking_form_wrap .form_horizontal {
-    padding-top: 10px!important
+    padding-top: 10px !important
 }
 
 .section_booking_agreement {
     padding-top: 2px;
     padding-bottom: 16px;
-    border-top-width: 1px!important;
+    border-top-width: 1px !important;
     background-color: #fff
 }
 
@@ -1931,7 +2021,8 @@ button {
     color: #666
 }
 
-.section_booking_agreement .agreement:after,.section_booking_agreement .agreement:before {
+.section_booking_agreement .agreement:after,
+.section_booking_agreement .agreement:before {
     content: " ";
     display: table
 }
@@ -1942,7 +2033,7 @@ button {
     margin-right: 0;
     padding: 12.5px 20px 9px;
     width: 100%;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
     border-top: none;
     border-bottom: 1px solid #eee;
@@ -1950,8 +2041,10 @@ button {
     box-sizing: border-box
 }
 
-.section_booking_agreement .agreement .btn_agreement,.section_booking_agreement .agreement .useragreement_details,.section_booking_agreement .agreement .useragreement_details.custom_details_wrap .custom_details {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.section_booking_agreement .agreement .btn_agreement,
+.section_booking_agreement .agreement .useragreement_details,
+.section_booking_agreement .agreement .useragreement_details.custom_details_wrap .custom_details {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400
 }
 
@@ -2071,7 +2164,7 @@ button {
 }
 
 .err .tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400
 }
 
@@ -2089,15 +2182,15 @@ button {
 
 .section_visual {
     position: relative;
-    border-top: none!important;
-    border-bottom: none!important
+    border-top: none !important;
+    border-bottom: none !important
 }
 
 .section_store_details {
     position: relative;
     padding: 18px 0 0;
     background-color: #fff;
-    border-top: none!important
+    border-top: none !important
 }
 
 .section_store_details .in_tit {
@@ -2119,7 +2212,7 @@ button {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
-    display: -webkit-box!important
+    display: -webkit-box !important
 }
 
 .section_store_details .store_details .dsc {
@@ -2137,7 +2230,8 @@ button {
     border-top: 1px solid #e2e5e8
 }
 
-.section_info_tab .info_tab_lst:after,.section_info_tab .info_tab_lst:before {
+.section_info_tab .info_tab_lst:after,
+.section_info_tab .info_tab_lst:before {
     content: " ";
     display: table
 }
@@ -2160,7 +2254,7 @@ button {
     margin-bottom: -1px;
     border-bottom: 2px solid #0aba16;
     color: #0aba16;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600
 }
 
@@ -2179,7 +2273,8 @@ button {
     padding: 16px 0 10px
 }
 
-.section_booking_ticket .ticket_body .qty:after,.section_booking_ticket .ticket_body .qty:before {
+.section_booking_ticket .ticket_body .qty:after,
+.section_booking_ticket .ticket_body .qty:before {
     content: " ";
     display: table
 }
@@ -2201,19 +2296,20 @@ button {
 .section_booking_ticket .ticket_body .qty .count_control .individual_price {
     padding-top: 4px;
     text-align: right;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
     color: #bbb
 }
 
 .section_booking_ticket .ticket_body .qty .count_control .individual_price .price_type {
     margin-left: 1px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400
 }
 
-.section_booking_ticket .ticket_body .qty .product_amount,.section_booking_ticket .ticket_body .qty .product_price {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.section_booking_ticket .ticket_body .qty .product_amount,
+.section_booking_ticket .ticket_body .qty .product_price {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
     font-size: 16px
 }
@@ -2222,7 +2318,8 @@ button {
     color: #000
 }
 
-.section_booking_ticket .ticket_body .qty .product_amount,.section_booking_ticket .ticket_body .qty .product_price {
+.section_booking_ticket .ticket_body .qty .product_amount,
+.section_booking_ticket .ticket_body .qty .product_price {
     display: block;
     margin-top: -2px;
     margin-bottom: 2px;
@@ -2233,7 +2330,8 @@ button {
     margin-top: 0
 }
 
-.section_booking_ticket .ticket_body .qty .qty_info_icon .product_amount,.section_booking_ticket .ticket_body .qty .qty_info_icon .product_price {
+.section_booking_ticket .ticket_body .qty .qty_info_icon .product_amount,
+.section_booking_ticket .ticket_body .qty .qty_info_icon .product_price {
     margin-bottom: 0
 }
 
@@ -2250,12 +2348,13 @@ button {
 
 .section_booking_ticket .ticket_body .qty .price_type {
     font-size: 16px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400
 }
 
-.popup_booking .pop_tit,.popup_booking .pop_tit .sm {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.popup_booking .pop_tit,
+.popup_booking .pop_tit .sm {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400
 }
 
@@ -2341,14 +2440,15 @@ button {
 
 .section_review_list .review_box .title_h3 {
     position: relative;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
     font-size: 17px;
     letter-spacing: -.15px
 }
 
-.section_review_list .review_box .guide,.section_review_list .short_review_area .grade_area .text_value {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+.section_review_list .review_box .guide,
+.section_review_list .short_review_area .grade_area .text_value {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .section_review_list .review_box .guide {
@@ -2370,7 +2470,9 @@ button {
     left: 0
 }
 
-.section_review_list .grade_area .graph_mask,.section_review_list .grade_area .graph_value,.section_review_list .short_review_area .review_info .grade:before {
+.section_review_list .grade_area .graph_mask,
+.section_review_list .grade_area .graph_value,
+.section_review_list .short_review_area .review_info .grade:before {
     background-image: url(../img/spr_comment.png);
     background-repeat: no-repeat;
     background-size: 90px 130px
@@ -2409,7 +2511,7 @@ button {
 .section_review_list .short_review_area .grade_area .text_value .total {
     margin-left: 5px;
     font-family: HelveticaNeue-Light;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400;
     color: #888
 }
@@ -2471,7 +2573,7 @@ button {
     right: 0;
     bottom: 0;
     left: 0;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     -webkit-box-sizing: border-box;
     moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -2484,7 +2586,7 @@ button {
     bottom: 0;
     width: 24px;
     height: 24px;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     vertical-align: bottom;
     -webkit-box-sizing: border-box;
     moz-box-sizing: border-box;
@@ -2508,7 +2610,7 @@ button {
 
 .section_review_list .short_review_area .resoc_name {
     margin-bottom: 3px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #333
@@ -2533,7 +2635,8 @@ button {
     word-wrap: normal
 }
 
-.section_review_list .short_review_area .review_info .date:before,.section_review_list .short_review_area .review_info .name:before {
+.section_review_list .short_review_area .review_info .date:before,
+.section_review_list .short_review_area .review_info .name:before {
     margin: 0 8px 0 6px;
     width: 1px;
     height: 11px;
@@ -2581,7 +2684,8 @@ button {
     white-space: nowrap
 }
 
-.section_my .my_summary .summary_board:after,.section_my .my_summary .summary_board:before {
+.section_my .my_summary .summary_board:after,
+.section_my .my_summary .summary_board:before {
     content: " ";
     display: table
 }
@@ -2607,7 +2711,7 @@ button {
 }
 
 .section_my .my_summary .summary_board .item .link_summary_board .spr_book2 {
-    vertical-align: middle!important
+    vertical-align: middle !important
 }
 
 .section_my .my_summary .summary_board .item .link_summary_board.on .tit {
@@ -2616,7 +2720,7 @@ button {
 
 @media screen and (max-width: 320px) {
     .section_my .my_summary .summary_board .item .link_summary_board .spr_book2 {
-        display:block;
+        display: block;
         margin: 0 auto
     }
 }
@@ -2628,13 +2732,15 @@ button {
 }
 
 .section_my .my_summary .summary_board .item .link_summary_board.on .figure {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 500;
     color: #bcff85
 }
 
-.section_my .my_summary .summary_board .item .figure,.section_my .my_summary .summary_board .item .tit,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.section_my .my_summary .summary_board .item .figure,
+.section_my .my_summary .summary_board .item .tit,
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_tit {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400
 }
 
@@ -2654,8 +2760,9 @@ button {
     color: #fff
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .tit,.section_my .wrap_mylist .list_cards .card .card_header .middle .tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .tit,
+.section_my .wrap_mylist .list_cards .card .card_header .middle .tit {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif
 }
 
 .section_my .wrap_mylist {
@@ -2670,7 +2777,7 @@ button {
 }
 
 .section_my .wrap_mylist .list_cards .card {
-	position: relative;
+    position: relative;
     margin-top: 13px
 }
 
@@ -2735,26 +2842,27 @@ button {
 }
 
 .section_my .wrap_mylist .list_cards .card .card_item {
-	position: relative;
+    position: relative;
 }
 
-.section_my .wrap_mylist .list_cards .card .card_item + .card_item .card_body .middle {
-	padding-top: 15px;
+.section_my .wrap_mylist .list_cards .card .card_item+.card_item .card_body .middle {
+    padding-top: 15px;
 }
 
 .section_my .wrap_mylist .list_cards .card .btn_goto_share {
-	position: absolute;
-	top: 20px;
-	right: 16px;
-	color: #888;
-	font-size: 19px;
-	padding: 5px;
-	background-color: #eee;
-	border:1px solid #ddd;
-	border-radius: 30px;
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    color: #888;
+    font-size: 19px;
+    padding: 5px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 30px;
 }
-.section_my .wrap_mylist .list_cards .card .card_item + .card_item .btn_goto_share {
-	top: 35px;
+
+.section_my .wrap_mylist .list_cards .card .card_item+.card_item .btn_goto_share {
+    top: 35px;
 }
 
 .section_my .wrap_mylist .list_cards .card .card_body {
@@ -2824,8 +2932,9 @@ button {
     white-space: nowrap
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_dsc,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_tit {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .detail .item .item_dsc,
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_tit {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #333
@@ -2845,7 +2954,8 @@ button {
     border-top: 1px solid #f2f2f2
 }
 
-.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:before {
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:after,
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary:before {
     content: " ";
     display: table
 }
@@ -2858,8 +2968,9 @@ button {
     word-break: keep-all
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_tit,.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_tit,
+.section_my .wrap_mylist .list_cards .card .card_body .middle .card_detail .price_summary .price_amount {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600
 }
 
@@ -2928,7 +3039,8 @@ button {
     vertical-align: top
 }
 
-.section_my .wrap_mylist .list_cards .card.confirmed .card_header,.section_my .wrap_mylist .list_cards .card.used .card_header {
+.section_my .wrap_mylist .list_cards .card.confirmed .card_header,
+.section_my .wrap_mylist .list_cards .card.used .card_header {
     display: table-row
 }
 
@@ -2995,7 +3107,7 @@ button {
 
 @media screen and (max-width: 320px) {
     .event .section_visual .group_visual .container_visual .visual_img .item {
-        height:177px
+        height: 177px
     }
 }
 
@@ -3014,13 +3126,16 @@ button {
     margin-bottom: 10px
 }
 
-.event .section_event_tab .event_tab_lst>.item .anchor,.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.event .section_event_tab .event_tab_lst>.item .anchor,
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400;
     white-space: nowrap
 }
 
-.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc {
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_adr,
+.event .section_visual .group_visual .container_visual .visual_img .item .event_txt .event_txt_dsc {
     font-size: 16px;
     line-height: 24px;
     overflow: hidden;
@@ -3053,7 +3168,7 @@ button {
 
 @media screen and (max-width: 320px) {
     .event .section_visual .group_visual .container_visual .prev_e {
-        left:235px
+        left: 235px
     }
 }
 
@@ -3085,7 +3200,7 @@ button {
 
 @media screen and (max-width: 320px) {
     .event .section_visual .group_visual .container_visual .nxt_e {
-        left:270px
+        left: 270px
     }
 }
 
@@ -3135,15 +3250,16 @@ button {
     top: 0;
     bottom: 8px;
     width: 25px;
-    background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: -o-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: -ms-linear-gradient(left,rgba(255,255,255,0) 0,#fff 100%);
-    background: linear-gradient(to right,rgba(255,255,255,0) 0,#fff 100%);
+    background: rgba(255, 255, 255, 0);
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0, #fff 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, #fff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#ffffff', GradientType=1);
     -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#a6000000', GradientType=1);
-    zoom:1}
+    zoom: 1
+}
 
 .event .section_event_tab .event_tab_lst {
     overflow-y: hidden;
@@ -3178,12 +3294,12 @@ button {
     padding: 10px 4.5px 9px 4px;
     color: #0aba16;
     border-bottom: 2px solid #0aba16;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600
 }
 
 .event .section_event_tab .event_tab_lst>.item .anchor.last {
-    color: #F82222!important
+    color: #F82222 !important
 }
 
 .event .section_event_tab .event_tab_lst>.item:last-child {
@@ -3200,7 +3316,7 @@ button {
     text-align: center;
     background-color: #fff;
     font-size: 13px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400;
     color: #666
 }
@@ -3252,14 +3368,15 @@ button {
 
 .event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit {
     margin-bottom: 8px;
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebB,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebB, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 600;
     font-size: 15px;
     color: #000
 }
 
-.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_dsc,.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit .sm {
-    font-family: -apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo',Helvetica Nenu,Helvetica,Roboto,Arial,NanumGothicWebR,'맑은고딕',MalgunGothic,'돋움',Dotum,sans-serif;
+.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_dsc,
+.event .wrap_event_box .lst_event_box .item .event_txt .event_txt_tit .sm {
+    font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', Helvetica Nenu, Helvetica, Roboto, Arial, NanumGothicWebR, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
     font-weight: 400;
     display: block;
     overflow: hidden;
@@ -3303,522 +3420,603 @@ button {
 }
 
 .more {
-	padding: 3px;
+    padding: 3px;
 }
+
 .more .btn {
-	margin: 5px 0;
-	width: 100%;
-	height: 40px;
-	border: 1px solid #ccc;
-	background-color: #fff;
+    margin: 5px 0;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    background-color: #fff;
 }
+
 .booking_cancel .btn {
-	margin: 20px 0 10px;
-	width: 100%;
-	height: 36px;
-	border: 1px solid #ccc;
-	background-color: #f4f4f4;
+    margin: 20px 0 10px;
+    width: 100%;
+    height: 36px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
 }
 
 
 /* Page - Confirm */
 .section_confirm {
-  margin: 0 auto -3px;
-  max-width: 414px;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-  border-bottom: none !important;
+    margin: 0 auto -3px;
+    max-width: 414px;
+    font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    border-bottom: none !important;
 }
+
 .section_confirm .spr_book2,
 .section_confirm .spr_book,
 .section_confirm .fn {
-  vertical-align: -2px;
-  position: relative;
-  margin-right: 3px;
+    vertical-align: -2px;
+    position: relative;
+    margin-right: 3px;
 }
+
 .section_confirm .detail_info {
-  padding-top: 8px;
-  margin-bottom: 5px;
+    padding-top: 8px;
+    margin-bottom: 5px;
 }
+
 .section_confirm .detail_info .info_lst {
-  display: table;
-  width: 100%;
-  border-spacing: 0;
-  font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-Light', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    display: table;
+    width: 100%;
+    border-spacing: 0;
+    font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-Light', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
 }
+
 .section_confirm .detail_info .info_lst .info_item {
-  display: table-row;
+    display: table-row;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_tit,
 .section_confirm .detail_info .info_lst .info_item .item_desc {
-  display: table-cell;
-  font-size: 16px;
-  text-align: left;
-  line-height: 23px;
-  vertical-align: top;
-  padding: 1px 0;
-  font-weight: normal;
+    display: table-cell;
+    font-size: 16px;
+    text-align: left;
+    line-height: 23px;
+    vertical-align: top;
+    padding: 1px 0;
+    font-weight: normal;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_desc .booked_date {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_tit {
-  color: #999;
-  padding-left: 1.5px;
-  padding-right: 12px;
-  white-space: nowrap;
+    color: #999;
+    padding-left: 1.5px;
+    padding-right: 12px;
+    white-space: nowrap;
 }
+
 .section_confirm .detail_info .info_lst .info_item .item_desc {
-  width: 100%;
-  color: #333;
+    width: 100%;
+    color: #333;
 }
+
 .section_confirm .confirm_item_top {
-  position: relative;
-  margin: 9px 8px -2px;
-  padding-bottom: 4px;
+    position: relative;
+    margin: 9px 8px -2px;
+    padding-bottom: 4px;
 }
+
 .section_confirm .confirm_item_top:before,
 .section_confirm .confirm_item_top:after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 4px;
-  background-size: 374px 4px;
-  background-repeat: no-repeat;
-  z-index: 10;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-size: 374px 4px;
+    background-repeat: no-repeat;
+    z-index: 10;
 }
+
 .section_confirm .confirm_item_top:before {
-  bottom: 0;
-  left: 0;
-  background-image: url('../img/bg_confirm_check_bottom_left.png');
-  background-position: 0 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/bg_confirm_check_bottom_left.png');
+    background-position: 0 0;
 }
+
 .section_confirm .confirm_item_top:after {
-  bottom: 0;
-  right: 0;
-  background-image: url('../img/bg_confirm_check_bottom_right.png');
-  background-position: 100% 0;
+    bottom: 0;
+    right: 0;
+    background-image: url('../img/bg_confirm_check_bottom_right.png');
+    background-position: 100% 0;
 }
+
 .section_confirm .confirm_item_top .common_bottom_buttongroup .fn-write2 {
-  vertical-align: -1px;
+    vertical-align: -1px;
 }
+
 .section_confirm .confirm_item_top .common_bottom_buttongroup .fn-write2:before {
-  font-size: 17px;
-  color: #14cb4b;
+    font-size: 17px;
+    color: #14cb4b;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left {
-  padding-left: 14px;
-  background-image: none;
-  background-position: 0 0;
-  background-size: 14px 1800px;
-  background-repeat: no-repeat;
+    padding-left: 14px;
+    background-image: none;
+    background-position: 0 0;
+    background-size: 14px 1800px;
+    background-repeat: no-repeat;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right {
-  padding-right: 14px;
-  background-image: none;
-  background-position: 100% 0;
-  background-size: 14px 1800px;
-  background-repeat: no-repeat;
+    padding-right: 14px;
+    background-image: none;
+    background-position: 100% 0;
+    background-size: 14px 1800px;
+    background-repeat: no-repeat;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title {
-  position: relative;
-  padding: 15px 7.5px 0 7.5px;
-  height: 34px;
-  background-image: none;
-  background-position: 0 0;
-  background-size: 4px 49px;
-  background-repeat: repeat-x;
-  font-size: 17px;
-  color: #fff;
+    position: relative;
+    padding: 15px 7.5px 0 7.5px;
+    height: 34px;
+    background-image: none;
+    background-position: 0 0;
+    background-size: 4px 49px;
+    background-repeat: repeat-x;
+    font-size: 17px;
+    color: #fff;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title .spr_book2 {
-  width: 20.5px;
-  height: 20.5px;
-  background-position: -297px -85px;
-  position: relative;
-  vertical-align: -4px;
-  margin-right: 7px;
+    width: 20.5px;
+    height: 20.5px;
+    background-position: -297px -85px;
+    position: relative;
+    vertical-align: -4px;
+    margin-right: 7px;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content {
-  position: relative;
-  padding: 16px 18px 19.5px;
-  background-color: #fff;
+    position: relative;
+    padding: 16px 18px 19.5px;
+    background-color: #fff;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info {
-  padding-top: 10px;
-  border-top: 1px solid #eee;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .info_lst {
-  margin: 0 -0.5px;
+    margin: 0 -0.5px;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .item_tit,
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .detail_info .item_desc {
-  padding-bottom: 2px;
-  height: 24px;
+    padding-bottom: 2px;
+    height: 24px;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .confirm_number {
-  min-height: 23px;
-  padding-bottom: 6px;
-  font-size: 16px;
-  font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', helvetica, 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-  color: #333;
+    min-height: 23px;
+    padding-bottom: 6px;
+    font-size: 16px;
+    font-family: 'HelveticaNeue-Medium', 'HelveticaNeue', helvetica, 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    color: #333;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .tit {
-  min-height: 27.5px;
-  padding-bottom: 7.5px;
-  font-size: 22px;
-  font-family: helvetica, 'AppleSDGothicNeo', sans-serif;
-  line-height: 28px;
-  color: #333;
-  font-weight: normal;
+    min-height: 27.5px;
+    padding-bottom: 7.5px;
+    font-size: 22px;
+    font-family: helvetica, 'AppleSDGothicNeo', sans-serif;
+    line-height: 28px;
+    color: #333;
+    font-weight: normal;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review {
-  margin: 0 -12px;
+    margin: 0 -12px;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_font {
-  color: #6f6cf7;
+    color: #6f6cf7;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_landing_tit {
-  border-bottom: 1px solid #e7e9ed;
+    border-bottom: 1px solid #e7e9ed;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_landing_tit .pholar_landing_link {
-  display: block;
-  padding: 20px 0 15px;
-  margin: -2px 0 0 -3px;
-  font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-SemiBold', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: #000;
+    display: block;
+    padding: 20px 0 15px;
+    margin: -2px 0 0 -3px;
+    font-family: 'Helveticaneue-light', helvetica, 'AppleSDGothicNeo-SemiBold', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt {
-  padding: 17px 0 0;
+    padding: 17px 0 0;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt .pholar_text_tit {
-  padding: 0 0 6px;
-  font-size: 15px;
-  color: #000;
+    padding: 0 0 6px;
+    font-size: 15px;
+    color: #000;
 }
+
 .section_confirm .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_top_content .pholar_review .pholar_review_cnt .pholar_text_con {
-  padding: 0 0 5px;
-  font-size: 13px;
-  color: #666;
-  line-height: 20px;
+    padding: 0 0 5px;
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
 }
+
 .section_confirm.used .confirm_item_top .item_top_inside_left {
-  background-image: url('../img/bg_confirm_check_gray_used_left.png');
+    background-image: url('../img/bg_confirm_check_gray_used_left.png');
 }
+
 .section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right {
-  background-image: url('../img/bg_confirm_check_gray_used_right.png');
+    background-image: url('../img/bg_confirm_check_gray_used_right.png');
 }
+
 .section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title {
-  background-image: url('../img/bg_confirm_check_gray_used_center.png');
-  background-size: 4px 53px;
-  height: 38px;
+    background-image: url('../img/bg_confirm_check_gray_used_center.png');
+    background-size: 4px 53px;
+    height: 38px;
 }
+
 .section_confirm.used .confirm_item_top .item_top_inside_left .item_top_inside_right .confirm_title .ico_clock {
-  background-position: -297px -154px;
+    background-position: -297px -154px;
 }
 
 .common_bottom_buttongroup_wrap {
-  margin: 13px -12px 0.5px;
+    margin: 13px -12px 0.5px;
 }
+
 .common_bottom_buttongroup {
-  position: relative;
-  display: table;
-  width: 100%;
-  background-color: #fbfcfd;
-  border: solid 1px #d5d9dd;
-  text-align: center;
+    position: relative;
+    display: table;
+    width: 100%;
+    background-color: #fbfcfd;
+    border: solid 1px #d5d9dd;
+    text-align: center;
 }
+
 .common_bottom_buttongroup .common_bottom_btn {
-  display: table-cell;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 11px;
-  width: 100%;
-  text-decoration: none;
-  color: #333;
-  font-size: 15px;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-  vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    vertical-align: middle;
 }
+
 .common_bottom_buttongroup .common_bottom_btn .fn-nbooking-calender2 {
-  font-size: 16px;
-  vertical-align: -2px;
-  color: #0ec645;
+    font-size: 16px;
+    vertical-align: -2px;
+    color: #0ec645;
 }
+
 .common_bottom_buttongroup .common_bottom_btn:before {
-  content: '';
-  width: 1px;
-  height: 14px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -7px;
-  background-color: #dde0e3;
+    content: '';
+    width: 1px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    background-color: #dde0e3;
 }
+
 .common_bottom_buttongroup .common_bottom_btn:first-child:before {
-  content: '';
-  width: 0;
-  height: 0;
-  position: static;
-  left: 0;
-  top: 0;
-  margin-top: 0;
-  background: none;
+    content: '';
+    width: 0;
+    height: 0;
+    position: static;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    background: none;
 }
+
 .common_bottom_buttongroup.column2 .common_bottom_btn {
-  width: 50%;
+    width: 50%;
 }
+
 .common_bottom_buttongroup.column2 .common_bottom_btn2 {
-  width: 40%;
+    width: 40%;
 }
+
 .common_bottom_buttongroup.column2 .common_bottom_btn2:last-child {
-  width: 60%;
+    width: 60%;
 }
 
 .pholar_text_con span {
-	color: #0aba16;
+    color: #0aba16;
 }
 
 /* Page - Review */
 .write_act {
-  position: relative;
-  margin-top: 7px;
-  border-top: 1px solid #e2e5e8;
-  background-color: #fff;
+    position: relative;
+    margin-top: 7px;
+    border-top: 1px solid #e2e5e8;
+    background-color: #fff;
 }
+
 .write_act .title_star {
-  padding: 16px 0 14.5px;
-  font-size: 17px;
-  color: #000;
-  font-weight: normal;
-  text-align: center;
+    padding: 16px 0 14.5px;
+    font-size: 17px;
+    color: #000;
+    font-weight: normal;
+    text-align: center;
 }
+
 .write_act .review_rating {
-  padding-bottom: 9px;
-  text-align: center;
+    padding-bottom: 9px;
+    text-align: center;
 }
+
 .write_act .review_rating .rating {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  height: 32px;
-  margin-top: -2px;
-  padding: 2px 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 32px;
+    margin-top: -2px;
+    padding: 2px 0;
 }
+
 .write_act .review_rating .rating .rating_rdo {
-  position: relative;
-  display: inline-block;
-  z-index: 20;
-  opacity: 0.001;
-  width: 35px;
-  height: 32px;
-  background-color: #fff;
-  cursor: pointer;
-  vertical-align: top;
+    position: relative;
+    display: inline-block;
+    z-index: 20;
+    opacity: 0.001;
+    width: 35px;
+    height: 32px;
+    background-color: #fff;
+    cursor: pointer;
+    vertical-align: top;
 }
+
 .write_act .review_rating .rating .rating_rdo.first_star {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  left: -20px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: -20px;
 }
-.write_act .review_rating .rating .rating_rdo + .span {
-  position: relative;
-  display: inline-block;
-  z-index: 10;
-  width: 35px;
-  height: 32px;
-  margin-left: -38px;
-  background-image: url('../img/spr_comment.png');
-  background-repeat: no-repeat;
-  background-size: 90px 130px;
-  background-position: 0 -92px;
-  cursor: pointer;
+
+.write_act .review_rating .rating .rating_rdo+.span {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    width: 35px;
+    height: 32px;
+    margin-left: -38px;
+    background-image: url('../img/spr_comment.png');
+    background-repeat: no-repeat;
+    background-size: 90px 130px;
+    background-position: 0 -92px;
+    cursor: pointer;
 }
-.write_act .review_rating .rating .rating_rdo:checked + .span,
-.write_act .review_rating .rating .rating_rdo.checked + .span {
-  background-position: -37px -92px;
+
+.write_act .review_rating .rating .rating_rdo:checked+.span,
+.write_act .review_rating .rating .rating_rdo.checked+.span {
+    background-position: -37px -92px;
 }
+
 .write_act .review_rating .rating .star_rank {
-  display: inline-block;
-  height: 26px;
-  padding-left: 3.5px;
-  font-size: 37px;
-  font-weight: normal;
-  color: #000;
-  vertical-align: 2px;
+    display: inline-block;
+    height: 26px;
+    padding-left: 3.5px;
+    font-size: 37px;
+    font-weight: normal;
+    color: #000;
+    vertical-align: 2px;
 }
+
 .write_act .review_rating .rating .star_rank.gray_star {
-  color: #ddd;
+    color: #ddd;
 }
+
 .review_contents {
-  position: relative;
-  padding: 12px 15px 21px;
-  background-color: #fff;
-  box-sizing: border-box;
+    position: relative;
+    padding: 12px 15px 21px;
+    background-color: #fff;
+    box-sizing: border-box;
 }
+
 .review_contents.write {
-  padding: 6px 20px 0;
-  background-color: #fff;
-  font: 0px/0 a;
+    padding: 6px 20px 0;
+    background-color: #fff;
+    font: 0px/0 a;
 }
+
 .review_contents .review_write_info {
-  overflow-y: auto;
-  position: absolute;
-  top: 6px;
-  left: 20px;
-  right: 20px;
-  bottom: 0;
-  padding: 7px 10px;
-  border: 1px solid #e8e8e8;
-  background-color: #fff;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-  font-size: 15px;
-  color: #989898;
-  line-height: 23px;
-  cursor: text;
+    overflow-y: auto;
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    padding: 7px 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    font-size: 15px;
+    color: #989898;
+    line-height: 23px;
+    cursor: text;
 }
+
 .review_contents .review_write_info:hover,
 .review_contents .review_write_info:focus {
-  text-decoration: none;
-  color: #989898;
+    text-decoration: none;
+    color: #989898;
 }
+
 .review_contents .review_write_info .left_space {
-  position: relative;
-  display: inline-block;
-  padding-left: 7.5px;
+    position: relative;
+    display: inline-block;
+    padding-left: 7.5px;
 }
+
 .review_contents .review_textarea {
-  overflow: auto;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 7px 10px;
-  border: 1px solid #e8e8e8;
-  border-radius: 0;
-  font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
-  font-size: 16px;
-  color: #777;
-  line-height: 20px;
-  box-sizing: border-box;
+    overflow: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 7px 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    font-family: 'HelveticaNeue', helvetica, 'AppleSDGothicNeo-Regular', 'AppleSDGothicNeo', '나눔고딕', NanumGothic, '맑은고딕', MalgunGothic, '돋움', Dotum, sans-serif;
+    font-size: 16px;
+    color: #777;
+    line-height: 20px;
+    box-sizing: border-box;
 }
+
 .review_contents .review_textarea::-moz-placeholder {
-  color: #989898;
-  opacity: 1;
-  font-size: 15px;
+    color: #989898;
+    opacity: 1;
+    font-size: 15px;
 }
+
 .review_contents .review_textarea:-ms-input-placeholder {
-  color: #989898;
-  font-size: 15px;
+    color: #989898;
+    font-size: 15px;
 }
+
 .review_contents .review_textarea::-webkit-input-placeholder {
-  color: #989898;
-  font-size: 15px;
+    color: #989898;
+    font-size: 15px;
 }
+
 .review_contents .review_textarea:focus {
-  outline: none;
+    outline: none;
 }
+
 .review_photos {
-  padding-bottom: 20px;
-  background-color: #fff;
+    padding-bottom: 20px;
+    background-color: #fff;
 }
+
 .review_photos .item_preview_thumbs {
-  padding-top: 0;
-  padding-left: 15px;
+    padding-top: 0;
+    padding-left: 15px;
 }
+
 .review_photos .item_preview_thumbs .lst_thumb .item {
-  width: auto;
-  height: 160px;
+    width: auto;
+    height: 160px;
 }
+
 .review_photos .item_preview_thumbs .lst_thumb .item .item_thumb {
-  width: auto;
-  height: 160px;
+    width: auto;
+    height: 160px;
 }
+
 .review_write_footer_wrap {
-  padding: 0 20px 15px;
-  background-color: #fff;
+    padding: 0 20px 15px;
+    background-color: #fff;
 }
+
 .review_write_footer {
-  position: relative;
-  border: solid #e8e8e8;
-  border-width: 0 1px 1px;
-  box-sizing: border-box;
+    position: relative;
+    border: solid #e8e8e8;
+    border-width: 0 1px 1px;
+    box-sizing: border-box;
 }
+
 .review_write_footer .btn_upload {
-  display: inline-block;
-  padding: 8px 8.5px 11px;
+    display: inline-block;
+    padding: 8px 8.5px 11px;
 }
+
 .review_write_footer .btn_upload .fn-image1 {
-  font-size: 25px;
-  color: #000;
-  vertical-align: middle;
+    font-size: 25px;
+    color: #000;
+    vertical-align: middle;
 }
+
 .review_write_footer .btn_upload .text_add_photo {
-  font-size: 16px;
-  color: #000;
-  vertical-align: -1.5px;
+    font-size: 16px;
+    color: #000;
+    vertical-align: -1.5px;
 }
+
 .review_write_footer .hidden_input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 30%;
-  opacity: 0;
-  z-index: 1;
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
 }
+
 .review_write_footer .guide_review {
-  position: absolute;
-  top: 12px;
-  right: 8.5px;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 19px;
-  color: #999;
-  text-align: right;
-  box-sizing: border-box;
+    position: absolute;
+    top: 12px;
+    right: 8.5px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999;
+    text-align: right;
+    box-sizing: border-box;
 }
+
 .review_photos_write {
-  margin-bottom: 0;
-  padding-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
+
 .review_photos_write .item_preview_thumbs {
-  padding: 10px 0;
-  overflow-x: auto;
+    padding: 10px 0;
+    overflow-x: auto;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item {
-  width: auto;
-  height: 80px;
+    width: auto;
+    height: 80px;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item .anchor {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 17px;
-  height: 17px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 17px;
+    height: 17px;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item .anchor .ico_del {
-  z-index: 200;
-  position: absolute;
-  right: 0;
+    z-index: 200;
+    position: absolute;
+    right: 0;
 }
+
 .review_photos_write .item_preview_thumbs .lst_thumb .item .item_thumb {
-  width: auto;
-  height: 80px;
+    width: auto;
+    height: 80px;
 }
 
 .middot {
-  position: relative;
-  display: inline-block;
-  padding-left: 7.5px;
+    position: relative;
+    display: inline-block;
+    padding-left: 7.5px;
 }
 
 .middot:before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 10px;
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 10px;
 }
