@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/* 기본스타일 정의 */
+body,
+html,
+div,
+nav,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+a {
+    margin: 0;
+    height: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* 
+header (Mobile)
+*/
+
+.header_nav {
+    height: 50px;
+    background-color: #343a40;
+    padding: 10px 20px 0 20px;
+    position: relative;
+}
+
+.header {
+    height: 100%;
+}
+
+.header .header_item {
+    float: left;
+    height: 100%;
+}
+
+.header .header_item a,
+.menu a {
+    color: white;
+    font-weight: bold;
+}
+
+/* 1번째 아이템스타일 */
+.header .header_item:first-child a {
+    font-size: 20px;
+}
+
+.header .header_item .logo_box {
+    height: 100%;
+}
+
+.header .header_item .logo_box .img_box {
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding-right: 5px;
+}
+
+.header .header_item .logo_box .img_box img {
+    width: 100%;
+}
+
+.header .header_item .logo_box .img_box .infinite_rotating_logo {
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 2번째 아이템스타일 */
+.header .header_item:nth-child(2n+2) {
+    display: none;
+}
+
+/* 햄버거버튼 스타일 */
+.header .header_item:nth-child(n+3) {
+    float: right;
+}
+
+.header .header_item:nth-child(n+3) .menu_btn_box {
+    height: 20px;
+    width: 20px;
+}
+
+.header .header_item:nth-child(n+3) .menu_btn_box img {
+    width: 100%;
+}
+
+.header .header_item:nth-child(n+3) .sns_box {
+    display: none;
+}
+
+/* 별도메뉴 */
+.menu {
+    height: auto;
+    text-align: center;
+    background-color: #343a40;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.menu .menu_item:nth-child(n+2) {
+    padding-top: 20px;
+}
+
+.menu .menu_item:last-child .sns_box {
+    height: 100%;
+    display: inline-block;
+}
+
+.menu .menu_item:last-child .sns_box .sns_link {
+    float: left;
+}
+
+.menu .menu_item:last-child .sns_box .sns_link:nth-child(n+2) {
+    margin-left: 10px;
+}
+
+.menu .menu_item:last-child .sns_box .sns_link a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.menu .menu_item:last-child .sns_box .sns_link a img {
+    width: 100%;
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) {
+    .header {
+        margin: 0 auto;
+        max-width: 768px;
+        position: relative;
+    }
+
+    .header_nav {
+        height: 70px;
+        padding: 0 20px 0 20px;
+    }
+
+    .header .header_item:first-child .logo_box .img_box {
+        margin-top: 20px;
+    }
+
+    .header .header_item:first-child .logo_box a {
+        line-height: 70px;
+    }
+
+    .header .header_item:nth-child(2n+2) {
+        display: block;
+        position: absolute;
+        left: 165.98px;
+        right: 70px;
+        text-align: center;
+    }
+
+    .header .header_item:nth-child(2n+2) .header_item_menu {
+        height: 100%;
+        display: inline-block;
+        line-height: 70px;
+    }
+
+    .header .header_item:nth-child(2n+2) .header_item_menu .menu_item {
+        float: left;
+    }
+
+    .header .header_item:nth-child(2n+2) .header_item_menu .menu_item:nth-child(n+2) {
+        margin-left: 25px;
+    }
+
+    .header .header_item:nth-child(n+3) .sns_box {
+        display: block;
+        height: 100%;
+    }
+
+    .header .header_item:nth-child(n+3) .sns_box .sns_link {
+        margin-top: 20px;
+    }
+
+    .header .header_item:nth-child(n+3) .sns_box .sns_link:nth-child(2n+1) {
+        float: left;
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .header .header_item:nth-child(n+3) .sns_box .sns_link a {
+        height: 100%;
+        display: block;
+    }
+
+    .header .header_item:nth-child(n+3) .sns_box .sns_link a img {
+        width: 100%;
+    }
+
+    .header .header_item:nth-child(n+3) .sns_box .sns_link:nth-child(n+2) {
+        float: right;
+        width: 30px;
+    }
+
+    .header .header_item:nth-child(n+3) .menu_btn_box {
+        display: none;
+    }
+}
