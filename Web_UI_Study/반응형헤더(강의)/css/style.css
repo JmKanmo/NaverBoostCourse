@@ -1,0 +1,86 @@
+.clear_fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.header_nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.header_nav i {
+    cursor: pointer;
+}
+
+.header_nav {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #111138;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+}
+
+.header_nav .menu_list li {
+    float: left;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.header_nav .menu_list li:hover {
+    background-color: bisque;
+}
+
+.header_nav .sns_list li {
+    float: left;
+}
+
+.header_nav .sns_list li:nth-child(n+2) {
+    padding-left: 15px;
+}
+
+.header_nav .menu_btn {
+    display: none;
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: beige;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .header_nav {
+        flex-flow: column nowrap;
+    }
+
+    .header_nav .logo_box {
+        width: 100%;
+    }
+
+    .header_nav .menu_list {
+        text-align: center;
+    }
+
+    .header_nav .menu_list li {
+        float: none;
+    }
+
+    .header_nav .sns_list {
+        padding-top: 20px;
+    }
+
+    .header_nav .menu_btn {
+        display: block;
+    }
+}
